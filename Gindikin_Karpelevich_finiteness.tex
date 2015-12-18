@@ -369,7 +369,7 @@ Let $\tau:[0,1]\rightarrow \mathcal{I}$ a segment of $\mathcal{I}$ such that $\t
 Proof : Suppose $\tau([0,1])\not\subset \A$. Let $u=\sup\{t\in [0,1]|\tau(u)\notin \A\}$. Then by the same reasoning as in the proof that "$x+\delta\cap\A=y+\delta$" in the paragraph "Definition of $y_\nu$ and $T_\nu$", $x=\tau(u)\in\A$ One has $\tau(0)\leq x\leq \tau(1)$ (by the same reasoning as in the proof of lemma \ref{lemme distance vectorielle}). 
 
 By remark~\ref{rque axioms MA3 et MA4 modifiés}, there exist an apartment $A=g^{-1}.\A$ with $g\in G$ containing $\mathfrak{R}=-\infty$ and $germ_x([x,\tau(0)])$. By axiom (MA4) (and remark~\ref{rque axioms MA3 et MA4 modifiés}) applied to $\mathfrak{R}=-\infty$ and to $x$, we can suppose that $g$ fixes $\mathrm{cl}(x,-\infty)\supset x-C_f^v$.  
-Let $x'\in [x,\tau(0)]\backslash\{x\}$ such that $[x,x']\subset A$. Then $g.x'=\rho_{-\infty}(x')\in x-\R_+\nu\subset x-C_f^v$. Therefore, $x'=g.x'\in \A$, which is absurd. Hence $\tau([0,1])\subset \A$. $\square$
+Let $x'\in [x,\tau(0)]\backslash\{x\}$ such that $[x,x']\subset A$ and $x'\notin \A$. Then $g.x'=\rho_{-\infty}(x')\in x-\R_+\nu\subset x-C_f^v$. Therefore, $x'=g.x'\in \A$, which is absurd. Hence $\tau([0,1])\subset \A$. $\square$
 
 
 
@@ -618,9 +618,10 @@ The basic idea of the proof of theorem~\ref{thm égalité des ensembles bis}, is
 Let $\mu\in Q^\vee_-$ and $H=-h(\mu)+1\in \N$. Let $x\in \mathcal{I}$ and $a\in Y$ such that $d^v(a,x)=T\nu$, with $T\geq H$ and $\rho_{+\infty}(x)=a+T\nu +\mu$. Let $g\in G$ such that $g.a=a$ and $g.x=T\lambda+a$. Then $g$ fixes $[a,a+(T-H)\nu]$ and in particular $x\in B^v(a+(T-H)\nu,H\nu)$.
 \end{lemme}
 
-Proof : Let $\tau:[0,1]\rightarrow \mathbb{A}$ defined by $\tau(t)=a+(1-t)T\nu$. The main idea is to apply lemma \ref{lemme fin des chemins de Hecke longs} to $\rho_{+\infty}(g.\tau)$ but we cannot do it directly because $\rho_{+\infty}(\tau)$ is not a Hecke path with respect to $-C^v_f$. Let $\mathbb{A}'$ be the vectorial space $\mathbb{A}$ equipped with a structure of apartment of $-\mathbb{A}$: the fundamental chamber of $\mathbb{A}'$ is $C^{v,}_f=-C^v_f$ etc ... Let $\mathcal{I}'$ be the set $\mathcal{I}$, whose apartments are the $-A$ where $A$ runs over the apartment of $\mathbb{A}$. Then $\mathcal{I}'$ is a hovel of standard apartment $\mathbb{A}'$. We have $0\leq x$ in $\mathcal{I}$ and so $x\leq'0$ in $\mathcal{I}'$. 
+Proof : Let $\tau:[0,1]\rightarrow \mathbb{A}$ defined by $\tau(t)=a+(1-t)T\nu$. The main idea is to apply lemma \ref{lemme fin des chemins de Hecke longs} to $\rho_{+\infty}\circ (g^{-1}.\tau)$ but we cannot do it directly because $\rho_{+\infty}(\tau)$ is not a Hecke path with respect to $-C^v_f$. Let $\mathbb{A}'$ be the vectorial space $\mathbb{A}$ equipped with a structure of apartment of $-\mathbb{A}$: the fundamental chamber of $\mathbb{A}'$ is $C^{v,}_f=-C^v_f$ etc ... Let $\mathcal{I}'$ be the set $\mathcal{I}$, whose apartments are the $-A$ where $A$ runs over the apartment of $\mathbb{A}$. Then $\mathcal{I}'$ is a hovel of standard apartment $\mathbb{A}'$. We have $0\leq x$ in $\mathcal{I}$ and so $x\leq'0$ in $\mathcal{I}'$. 
  
-Then the image $\pi$ of $g.\tau$ by $\rho_{+\infty}$ is a Hecke path of shape $-T\nu$ from $\rho_{+\infty}(x)=a+T\nu +\mu$ to $a$. By lemma \ref{lemme fin des chemins de Hecke longs}, for $t>-h(\mu)/T$, $\pi'(t)=-T\nu$, and thus $\rho_{+\infty}(g.\tau(t))=\tau(t)$. According to lemma \ref{lemme image réciproque de segments}, if $t>-h(\mu)/T$, $\tau(t)\in \mathbb{A}$, thus $\rho_{+\infty}(g.\tau(t))=g.\tau(t)=\tau(t)$ and consequently $g$ fixes  $\tau(t)$. In particular, $g$ fixes $[a,a+(T-H)\nu=\tau(\frac{H}{T})]$, and $d^v(a+(T-H)\nu,x)=d^v(g^{-1}.(a+(T-H)\nu),g^{-1}.x)=d^v(a+(T-H)\nu,a+T\nu)=H\nu$. $\square$
+Then the image $\pi$ of $g^{-1}.\tau$ by $\rho_{+\infty}$ is a Hecke path of shape $-T\nu$ from $\rho_{+\infty}(x)=a+T\nu +\mu$ to $a$. By lemma~\ref{lemme fin des chemins de Hecke longs} (for $\I'$), for $t>-h(\mu)/T$, $\pi'(t)=-T\nu$, and thus lemma~\ref{lemme image réciproque de segments} implies $\rho_{+\infty}(g^{-1}.\tau(t))=g^{-1}.\tau(t)$ for all $t>-h(\mu)/T$. Therefore, $g^{-1}.\tau_{|(-h(\mu)/T,1]}$ is a segment in $\A$ ending in $a$, with derivative $-T\nu$ and thus, for all $t\in (\frac{-h(\mu)}{T},1]$, $g^{-1}.\tau(t)=\tau(t)$.
+ In particular, $g$ fixes $[a,\tau(\frac{H}{T})]=[a,a+(T-H)\nu]$, and $d^v(a+(T-H)\nu,x)=d^v(g^{-1}.(a+(T-H)\nu),g^{-1}.x)=d^v(a+(T-H)\nu,a+T\nu)=H\nu$. $\square$
 
 
 
@@ -636,39 +637,32 @@ Then the image $\pi$ of $g.\tau$ by $\rho_{+\infty}$ is a Hecke path of shape $-
 
 Let $E$ be as in the lemma~\ref{lemme description de Y^{++}}. 
  
-\begin{lemme}\label{lemme majoration du cardinal des boules}
- Let $\mu \in Q^\vee_-$. Let $H=-h(\mu)+1$. Let $\lambda\in Y^{++}$. We fix a writing  $\lambda=\sum_{e\in E}\lambda_e e$, with $\lambda_e\in \N$ for all $e\in E$. Let $J=\{e\in E | \lambda_e \geq H\}$. Then $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})\subset B^v(\lambda-H\sum_{e\in J} e-\sum_{e\notin J}\lambda_e e, H\sum_{e\in J}e+\sum_{e\notin J}\lambda_ e)$. 
-\end{lemme}
  
-Proof : Let $m=|J|$. One writes $J=\{e_1,\ldots,e_m\}$ and for $i\in \llbracket 1,m\rrbracket$, one writes $\lambda_i$ instead or $\lambda_{e_i}$.
- 
-Let $g\in G$ fixing $0$ and such that $g.x=\lambda$. For $i\in \llbracket 1,m\rrbracket$, let $x_i=\sum_{j=1}^i (\lambda_i-H)e_i$ and let $x_{m+1}=x$.
- 
-Let $i\in \llbracket 0,m-1\rrbracket$ and suppose we have proven that $g$ fixes $\bigcup_{j=0}^{i-1}[x_j,x_{j+1}]$, with $x_0=0$.
- 
- 
-For $j\in\llbracket i,m\rrbracket$, let $z_j=g^{-1}.(x_{i}+\sum_{k=i+1}^j \lambda_k e_k)$, and $z_{m+1}=x$ (one has $z_i=x_i$ by the induction hypothesis or by the fact that $g$ fixes $0$ if $i=0$).
+\begin{lemme}\label{lemme distance finie à l'appartement bis}
+Let $\mu\in Q^\vee_-$, $H=-h(\mu)+1\in \N$ and $a\in Y$. Let $\lambda\in Y^{++}$. One writes $\lambda=\sum_{e\in E}\lambda_e e$ with $\lambda_e\in\N$ for all $e\in E$. Let $e\in E$. Then if $\lambda_e\geq H$, $B^v(a,\lambda)\cap\rho_{+\infty}^{-1}(\{a+\lambda+\mu\})\subset B^v(a+(\lambda_e -H)e,\lambda-(\lambda_e-H)e)$. 
+\end{lemme} 
 
-Let us show that $\rho_{+\infty}(z_{i+1})=\lambda_{i+1}e_{i+1}+\mu'$, with $\mu\leq \mu' \leq 0$.
+Proof : Let $x\in B^v(a,\lambda)\cap\rho_{+\infty}^{-1}(\{a+\lambda+\mu\})$ and $g\in G$ fixing $a$ such that $g.x=a+\lambda$.  Let $z=g^{-1}(a+\lambda_e e)$.
+
+Then one has $d^v(a,z)=\lambda_e e$ and $d^v(z,x)=\lambda-\lambda_e e$.
 
 According to lemma 2.4.b) of \cite{gaussent2014spherical} (adapted because one considers Hecke paths with respect to $C^v_f$), one has : 
 
-$\rho_{+\infty}(z_{i+1})-\rho_{+\infty}(z_i)=\rho_{+\infty}(z_{i+1})-x_i\leq_{Q^\vee}d^v(z_i,z_{i+1})=\lambda_{i+1}e_{i+1}$, 
+$\rho_{+\infty}(z)-a\leq_{Q^\vee} d^v(a,z)=\lambda_e e$ and $\rho_{+\infty}(x)-\rho_{+\infty}(z)\leq_{Q^\vee} d^v(z,x)=\lambda-\lambda_e e$.
+
+Therefore, \[a+\lambda+\mu=\rho_{+\infty}(x)\leq_{Q^\vee} \rho_{+\infty}(z)+\lambda-\lambda_e e\leq_{Q^\vee}a+\lambda.\]
+
+Hence, $\rho_{+\infty}(z)=a+\lambda_e e+\mu'$, with $\mu\leq_{Q^\vee}\mu'\leq_{Q^\vee}0$. One has $-h(\mu')+1\leq H$. By lemma~\ref{lemme distance finie à l'appartement}, $g$ fixes $[a,a+(\lambda_e-H)e]$ and thus $g$ fixes $a+(\lambda_e-H)e$. 
+
+As $d^v(g^{-1}.(a+(\lambda_e-H)e),x)=\lambda-(\lambda_e-H)e$, $x\in B^v(a+(\lambda_e -H)e,\lambda-(\lambda_e-H)e)$. $\square$
  
-for all $j\in \llbracket i+1, m-1\rrbracket$, $\rho_{+\infty}(z_{j+1})-\rho_{+\infty}(z_j)\leq_{Q^\vee} d^v(z_j,z_{j+1})= \lambda_{j+1}e_{j+1}$ and
  
-$\rho_{+\infty}(x_{m+1})-\rho_{+\infty}(x_m)\leq_{Q^\vee} H(e_1+\ldots + e_i)+\sum_{e\notin J}\lambda_e e$.
-
-
-Therefore one has :   \[\begin{aligned} \lambda+\mu =\rho_{+\infty}(z_{m+1})& \leq_{Q^\vee}\rho_{+\infty}(z_m)+H(e_1+\ldots+ e_i)+\sum_{e\notin J}\lambda_e e\\&\leq_{Q^\vee} \ldots \\ &\leq_{Q^\vee} \rho_{+\infty}(z_{i+1})+\lambda_m e_m+\ldots+\lambda_{i+2}e_{i+2}+H(e_1+\ldots+e_{i})+f\\ &\leq_{Q^\vee}z_i+\lambda_m e_m+\ldots+\lambda_{i+1}e_{i+1}+H(e_1+\ldots+e_i)+\sum_{e\notin J}\lambda_e e=\lambda.\end{aligned}\]
-
-Thus $\lambda_{i+1}e_{i+1}+\mu\leq_{Q^\vee}\rho_{+\infty}(z_{i+1})\leq_{Q^\vee}\lambda_{i+1}e_{i+1}$, so $\rho_{+\infty}(z_{i+1})=\lambda_{i+1}e_{i+1}+\mu'$, with $\mu\leq_{Q^\vee} \mu'\leq_{Q^\vee} 0$.
-
-
-One has $H=\max\{-h(u)+1|\mu\leq_{Q^\vee}u\leq_{Q^\vee}0\}$. Hence according to lemma~\ref{lemme distance finie à l'appartement}, $g$ fixes $[x_i,z_{i+1}-He_{i+1}=x_{i+1}]$. 
  
-By induction, $g$ fixes $\bigcup_{j=0}^{m-1}[x_j,x_{j+1}]$ and in particular, $g$ fixes $x_m=\lambda-H(e_1+\ldots+e_m)-\sum_{e\notin J}\lambda_e e$ which is the desired result. $\square$
+\begin{cor}\label{lemme majoration du cardinal des boules}
+ Let $\mu \in Q^\vee_-$. Let $H=-h(\mu)+1$. Let $\lambda\in Y^{++}$. We fix a writing  $\lambda=\sum_{e\in E}\lambda_e e$, with $\lambda_e\in \N$ for all $e\in E$. Let $J=\{e\in E | \lambda_e \geq H\}$. Then $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})\subset B^v(\lambda-H\sum_{e\in J} e-\sum_{e\notin J}\lambda_e e, H\sum_{e\in J}e+\sum_{e\notin J}\lambda_ e)$. 
+\end{cor}
  
+Proof : this is a generalization by induction of Lemma~\ref{lemme distance finie à l'appartement bis}.
 
 
     
