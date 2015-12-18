@@ -47,11 +47,11 @@
 
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\A}{\mathbb{A}}
-\newcommand{\N}{\mathbb{Z}_{\geq 0}}
+\newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\C}{\mathbb{C}}
-\newcommand{\Ne}{\mathbb{Z}_{\geq 1}}
+\newcommand{\Ne}{\mathbb{N}^*}
 \newcommand{\GL}{\mathrm{GL}}
 \newcommand{\I}{\mathcal{I}}
 \newcommand{\T}{\mathcal{T}}
@@ -61,6 +61,10 @@
 \begin{document}
 \maketitle
 
+
+\begin{abstract}
+In this paper, we give a proof of certain finiteness results about split Kac-Moody groups over a local non-archimedian field. Our results generalize those of "An affine Gindikin-Karpelevich" formula of A.Braverman, H.Garland, D.Kazhdan and M.Patnaik. We do not require our groups to be a affine. We use the hovel $\I$ associated to this situation, which is the analogue of the Bruhat-Tits building for a reductive group.
+\end{abstract}
 
 \section{Introduction}
 
@@ -105,6 +109,10 @@ In section~\ref{sect general frameworks} we set the general frameworks and the n
  In section~\ref{sect Y^++}, we show that $Y^{++}=Y\cap \overline{C_f^v}$ is a finitely generated monoid.
  
  In section~\ref{sect proof of final theorem}, we use the tools of preceding sections to show theorem~\ref{thm égalité des ensembles bis}. 
+
+\vspace{3mm}
+
+I thank Stéphane Gaussent for suggesting me this problem and for helping me in finding a solution.
 
 
 \section{General frameworks}\label{sect general frameworks}
@@ -245,7 +253,7 @@ An ordered affine hovel of type $\A$ is a set $\mathcal{I}$ endowed with a cover
 
 In this definition, we say that an apartment contains a germ of a filter if it contains at least one element of this germ. We say that an application fixes a germ if it fixes at least one element of this germ.
 
-\begin{rque}(consequence 2.2.3) of \cite{rousseau2011masures})\label{rque axioms MA3 et MA4 modifiés}
+\begin{rque}(consequence 2.2 3) of \cite{rousseau2011masures})\label{rque axioms MA3 et MA4 modifiés}
 By (MA2), the axioms (MA3) and (MA4) also apply in a hovel when $F$ is a point, a germ of a preodered segment and when $\mathfrak{R}$ or $F$ is a germ of a generic ray or a germ of a spherical sector face.
 \end{rque}
 
@@ -309,7 +317,7 @@ We also show that the only antecedent of some paths for $\rho_{-\infty}$ are the
 
 \vspace{3mm}
 
-Let us sketch the proof of theorem~\ref{thm inclusion}. We fix $\nu\in C_f^v$ and $\mu\in Q^\vee_\R$. Let $T^-=T_{\nu}^-$ and $y^-=y_\nu^-$ be the analogous of $T_\nu$ and $y_\nu$ with $\nu$ replaced by $-\nu$. We show that if $\lambda\in \A$, $T^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\big)$ is bounded by some constant $h(\mu)$ (this is corollary~\ref{corollaire majoration de T}), which uses lemma~\ref{lemme image réciproque de segments} and lemma~\ref{lemme fin des chemins de Hecke longs}). Therefore, for $\lambda$ sufficiently dominant, $y^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\big)\subset C_f^v$ and lemma~\ref{lemme_rétraction et distance vectorielle} complete the proof.
+Let us sketch the proof of theorem~\ref{thm inclusion}. We fix $\nu\in C_f^v$ and $\mu\in Q^\vee_\R$. Let $T^-=T_{\nu}^-$ and $y^-=y_\nu^-$ be the analogue of $T_\nu$ and $y_\nu$ with $\nu$ replaced by $-\nu$. We show that if $\lambda\in \A$, $T^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\big)$ is bounded by some constant $h(\mu)$ (this is corollary~\ref{corollaire majoration de T}), which uses lemma~\ref{lemme image réciproque de segments} and lemma~\ref{lemme fin des chemins de Hecke longs}). Therefore, for $\lambda$ sufficiently dominant, $y^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\big)\subset C_f^v$ and lemma~\ref{lemme_rétraction et distance vectorielle} complete the proof.
 
 \vspace{3mm}
 Let us recall briefly the notion of parallelism in $\I$. This is done more completely in \cite{rousseau2011masures} part 3. Let $\delta$ and $\delta'$ be two generic rays in $\I$. Then there exists a splayed chimney $R$ containing $\delta$ and a solid chimney $F$ containing $\delta'$. By (MA3) there exists an apartment $A$ containing the germ $\mathfrak{R}$ of $R$ and $F$. Therefore $A$ contains translates of $\delta$ and $\delta'$ and we say that $\delta$ and $\delta'$ are \textit{parallel}, if these translates are parallel in $A$. Parallelism is an equivalence relation and its equivalence classes are called \textit{directions}.
@@ -318,7 +326,7 @@ Let us recall briefly the notion of parallelism in $\I$. This is done more compl
 Let $x\in \I$ and $\delta$ be a generic ray. Then there exists a unique $ray$ $x+\delta$ in $\I$ with base point $x$ and direction $\delta$. In any apartment $A$ containing $x$ and a ray $\delta'$ parallel to $\delta$, this ray is the translate in $A$ of $\delta'$ having $x$ as a base point.
 \end{lemme}
 
-This lemme is analogous to proposition 4.7 1) of \cite{rousseau2011masures}. The difficult part of this lemma is the uniqueness of such a ray because second assertion of the term of the lemma yields a way to construct a ray having direction $\delta$ and $x$ as a base point. This uniqueness can be shown exactly in the same manner as the proof of proposition 4.7.1) by replacing "spherical sector face" by "generic ray". This is possible by NB.a) of proposition 2.7 and by 2.2 3) of \cite{rousseau2011masures}.
+This lemme is analogous to proposition 4.7 1) of \cite{rousseau2011masures}. The difficult part of this lemma is the uniqueness of such a ray because second assertion of the term of the lemma yields a way to construct a ray having direction $\delta$ and $x$ as a base point. This uniqueness can be shown exactly in the same manner as the proof of proposition 4.7.1) by replacing "spherical sector face" by "generic ray". This is possible by NB.a) of proposition 2.7 and by 2.2 3) (or by remark~\ref{rque axioms MA3 et MA4 modifiés} of this paper) of \cite{rousseau2011masures}.
 
 
 \paragraph{Definition of $y_\nu$ and $T_\nu$ (resp. $y^-_\nu$ and $T^-_\nu$)}
@@ -355,7 +363,7 @@ According to paragraph 2.3 of \cite{gaussent2014spherical}, the image $\pi$ of $
 
 
 \begin{lemme}\label{lemme image réciproque de segments}
-Let $\tau:[0,1]\rightarrow \mathcal{I}$ a segment of $\mathcal{I}$ such that $\tau(1)\in \mathbb{A}$ and $\rho_{-\infty}(\tau)$ is a segment of $\mathbb{A}$ satisfying  $(\rho_{-\infty}\circ\tau)'=\nu\in \overline{C^v_f}$. Then $\tau([0,1])\subset \mathbb{A}$ and thus $\rho_{-\infty}\circ \tau=\tau$.
+Let $\tau:[0,1]\rightarrow \mathcal{I}$ a segment of $\mathcal{I}$ such that $\tau(1)\in \mathbb{A}$ and $\rho_{-\infty}\circ\tau$ is a segment of $\mathbb{A}$ satisfying  $(\rho_{-\infty}\circ\tau)'=\nu\in \overline{C^v_f}$. Then $\tau([0,1])\subset \mathbb{A}$ and thus $\rho_{-\infty}\circ \tau=\tau$.
 \end{lemme}
 
 Proof : Suppose $\tau([0,1])\not\subset \A$. Let $u=\sup\{t\in [0,1]|\tau(u)\notin \A\}$. Then by the same reasoning as in the proof that "$x+\delta\cap\A=y+\delta$" in the paragraph "Definition of $y_\nu$ and $T_\nu$", $x=\tau(u)\in\A$ One has $\tau(0)\leq x\leq \tau(1)$ (by the same reasoning as in the proof of lemma \ref{lemme distance vectorielle}). 
@@ -453,7 +461,7 @@ For all $i\in I$, $\alpha_i([0,h(\mu)]\nu)$ is bounded, Consequently $\lambda$ s
 
 Let $\A_{in}=\bigcap_{i\in I} \ker \alpha_i$.
 
-In this subsection we introduce some kinds of "translation" of $\I$ of an inessential vector. It will be very useful to "generalize theorem from $Y$ to $Y+\A_{in}$" by getting rid of the inessential part. First example of this technique will be corollary~\ref{cor finitude des boules} which generalizes a theorem of \cite{gaussent2014spherical}. Then we study elements of $G$ inducing a translation on $\A$. We show that they commute with $\rho_{+\infty}$ and $\rho_{-\infty}$. We then can see that for fixed $\mu\in\Q^\vee$, the $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap\rho_{-\infty}^{-1}(\{\lambda\})$ for $\lambda\in Y+\A_{in}$ are some translated of  $\big(\rho_{+\infty}^{-1}(\{\mu\})\cap\rho_{-\infty}^{-1}(\{0\})\big)$  which enables to show theorem~\ref{thm invariance des cardinaux} by using theorem~\ref{thm inclusion} and corollary~\ref{cor finitude des boules}.
+In this subsection we introduce some kinds of "translation" of $\I$ of an inessential vector and show that they have very nice properties. It will be very useful to "generalize theorem from $Y$ to $Y+\A_{in}$" by getting rid of the inessential part. First example of this technique will be corollary~\ref{cor finitude des boules} which generalizes a theorem of \cite{gaussent2014spherical}. Then we study elements of $G$ inducing a translation on $\A$. We show that they commute with $\rho_{+\infty}$ and $\rho_{-\infty}$. We then can see that for fixed $\mu\in\Q^\vee$, the $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap\rho_{-\infty}^{-1}(\{\lambda\})$ for $\lambda\in Y+\A_{in}$ are some translated of  $\big(\rho_{+\infty}^{-1}(\{\mu\})\cap\rho_{-\infty}^{-1}(\{0\})\big)$  which enables to show theorem~\ref{thm invariance des cardinaux} by using theorem~\ref{thm inclusion} and corollary~\ref{cor finitude des boules}.
 
 \begin{lemme}\label{lemme partie inessentielle}
  Let $\nu\in\A_{in}$ and $a\in \I$. Then $|B^v(a,\nu)|=1$. Moreover, if $a\in \A$, $B^v(a,\nu)=\{a+\nu\}$. 
@@ -568,12 +576,12 @@ In this section we show that $Y^{++}$ is a finitely generated monoid, which will
 
 
 
-Let $l\in \mathbb{Z}_{>0}$. Let us define a binary relation $\prec$ on $\mathbb{Z}_{>0}$. Let $x,y\in \mathbb{Z}_{>0}^l$,, $x=(x_1,\ldots,x_l),\ y=(y_1,\ldots,y_l)$ then one says $x\prec y$ if $x\neq y$  and for all $i\in \llbracket 1,l\rrbracket$, $x_i\leq y_i$.
- 
+Let $l\in \Ne$. Let us define a binary relation $\prec$ on $\N^l$. Let $x,y\in \N^l$,  and $x=(x_1,\ldots,x_l),\ y=(y_1,\ldots,y_l)$ then one says $x\prec y$ if $x\neq y$ 
+ for all $i\in \llbracket 1,l\rrbracket$, $x_i\leq y_i$.
 \begin{lemme}\label{lemme ensembles d'incomparables}
-Let $l\in \mathbb{Z}_{>0}$ and $F$ a subset of $\mathbb{Z}_{>0}$ satisfying property (INC(l)) : 
+Let $l\in \Ne$ and $F$ be a subset of $\N^l$ satisfying property (INC(l)) : 
 
-for all $x,y\in F$, ($x\neq y$) implies ($x$ and $y$ are not comparable for $\prec$). 
+for all $x,y\in F$, $x$ and $y$ are not comparable for $\prec$. 
 
  Then $F$ is finite.
 \end{lemme}
@@ -582,20 +590,20 @@ Proof : this  is clear for $l=1$ because a set $F$ satisfying INC(1) is a single
 
 Suppose that $l>1$ and that we have proven that all set satisfying INC(l-1) is finite.
 
- Let $F$ be a set  satisfying INC(l) and suppose $F$ infinite. Let $(\lambda_n)_{n\in \mathbb{Z}_{\geq 0}}$ be an injective sequence of $F$. One write $(\lambda_n)=(\lambda_n^1,\ldots,\lambda_n^l)$. Let $(m_n)=(\min(\lambda_n))_{n\in \N}$ and $M=\max \lambda_{0}$. Then for all $n\in \mathbb{Z}_{\geq 0}$, $m_n\leq M$ (if $m_n>M$, we would have $\lambda_{0}\prec \lambda_n$). Maybe extracting a sequence of $\lambda$, one can suppose that $(m_n)=(\lambda_n^i)$ for some $i\in \llbracket 1, l\rrbracket$ and that $(m_n)$ is constant and equal to $m_0$. For $x\in \mathbb{Z}_{\geq 0}^l$, we define $\tilde{x}=(x_j)_{j\in \llbracket 1,l\rrbracket\backslash \{i\}}\in \mathbb{Z}_{\geq 0}^{l-1}$. 
+ Let $F$ be a set  satisfying INC(l) and suppose $F$ infinite. Let $(\lambda_n)_{n\in \N}$ be an injective sequence of $F$. One write $(\lambda_n)=(\lambda_n^1,\ldots,\lambda_n^l)$. Let $(m_n)=(\min(\lambda_n))_{n\in \N}$ and $M=\max \lambda_{0}$. Then for all $n\in \N$, $m_n\leq M$ (if $m_n>M$, we would have $\lambda_{0}\prec \lambda_n$). Maybe extracting a sequence of $\lambda$, one can suppose that $(m_n)=(\lambda_n^i)$ for some $i\in \llbracket 1, l\rrbracket$ and that $(m_n)$ is constant and equal to $m_0\in \llbracket 0,M\rrbracket$. For $x\in \N^l$, we define $\tilde{x}=(x_j)_{j\in \llbracket 1,l\rrbracket\backslash \{i\}}\in \N^{l-1}$. 
  
- Set $\tilde{F}=\{\tilde{\lambda_n}|n\in\mathbb{Z}_{\geq 0}\}$. The set $\tilde{F}$ satisfies INC(l-1). By the induction hypothesis, $\tilde{F}$ is finite and thus $F$ is finite, which is absurd. Hence $F$ is finite and the lemma is proven. $\square$
+ Set $\tilde{F}=\{\tilde{\lambda_n}|n\in\N\}$. The set $\tilde{F}$ satisfies INC(l-1). By the induction hypothesis, $\tilde{F}$ is finite and thus $F$ is finite, which is absurd. Hence $F$ is finite and the lemma is proven. $\square$
 
 \begin{lemme}\label{lemme description de Y^{++}}
-There exists a finite set $E$ such that $Y^{++}=\sum_{e\in E}\mathbb{Z}_{\geq 0}e$.
+There exists a finite set $E$ such that $Y^{++}=\sum_{e\in E}\Ne$.
 \end{lemme}
 
 Proof : the set $Y_{in}=Y\cap\A_{in}$ is a lattice in the vectorial space it spans. Consequently, it is a finitely generated $\Z$-module and thus a finitely generated monoid. Let $E_1$ a finite set generated $Y_{in}$ as a monoid.
 
- Let $Y_{\succ 0}=Y^{++}\backslash Y_{in}$. Let $\mathcal{P}=\{a\in Y_{\succ 0}|a\neq b+c\ \forall b,c\in Y_{\succ 0}\}$. Let $\alpha:Y^{++}\rightarrow \mathbb{Z}_{\geq 0}^{I}$ such that 
+ Let $Y_{\succ 0}=Y^{++}\backslash Y_{in}$. Let $\mathcal{P}=\{a\in Y_{\succ 0}|a\neq b+c\ \forall b,c\in Y_{\succ 0}\}$. Let $\alpha:Y^{++}\rightarrow \N^{I}$ such that 
  $\alpha(x)=(\alpha_i(x))_{i\in I}$ for all $x\in Y^{++}$. Let $a,b\in \mathcal{P}$.
   If $\alpha(a)\prec \alpha(b)$, then $b=b-a+a$, with $a,b-a\in \mathcal{P}$, which is absurd and by symmetry we deduce that $\alpha(a)$ and $\alpha(b)$ are not comparable for $\prec$. 
-Therefore, by lemme~\ref{lemme ensembles d'incomparables}, $\alpha(\mathcal{P})$ is finite. Let $E_2$ be a finite set of $Y_{\succ 0}$ such that $\alpha(\mathcal{P})=\{\alpha(x)|x\in E\}$. Then $Y^{++}=\sum_{e\in E_2}\mathbb{Z}_{\geq 0}e+Y_{in}=\sum{e\in E}\N e$, where $E=E_1\cup E_2$. $\square$
+Therefore, by lemme~\ref{lemme ensembles d'incomparables}, $\alpha(\mathcal{P})$ is finite. Let $E_2$ be a finite set of $Y_{\succ 0}$ such that $\alpha(\mathcal{P})=\{\alpha(x)|x\in E\}$. Then $Y^{++}=\sum_{e\in E_2}\Ne+Y_{in}=\sum{e\in E}\N e$, where $E=E_1\cup E_2$. $\square$
 
  
 
@@ -607,7 +615,7 @@ The basic idea of the proof of theorem~\ref{thm égalité des ensembles bis}, is
 
 
 \begin{lemme}\label{lemme distance finie à l'appartement}
-Let $\mu\in Q^\vee_-$ and $H=-h(\mu)+1\in \mathbb{Z}_{\geq 0}$. Let $x\in \mathcal{I}$ and $a\in Y$ such that $d^v(a,x)=T\nu$, with $T\geq H$ and $\rho_{+\infty}(x)=a+T\nu +\mu$. Let $g\in G$ such that $g.a=a$ and $g.x=T\lambda+a$. Then $g$ fixes $[a,a+(T-H)\nu]$ and in particular $x\in B^v(a+(T-H)\nu,H\nu)$.
+Let $\mu\in Q^\vee_-$ and $H=-h(\mu)+1\in \N$. Let $x\in \mathcal{I}$ and $a\in Y$ such that $d^v(a,x)=T\nu$, with $T\geq H$ and $\rho_{+\infty}(x)=a+T\nu +\mu$. Let $g\in G$ such that $g.a=a$ and $g.x=T\lambda+a$. Then $g$ fixes $[a,a+(T-H)\nu]$ and in particular $x\in B^v(a+(T-H)\nu,H\nu)$.
 \end{lemme}
 
 Proof : Let $\tau:[0,1]\rightarrow \mathbb{A}$ defined by $\tau(t)=a+(1-t)T\nu$. The main idea is to apply lemma \ref{lemme fin des chemins de Hecke longs} to $\rho_{+\infty}(g.\tau)$ but we cannot do it directly because $\rho_{+\infty}(\tau)$ is not a Hecke path with respect to $-C^v_f$. Let $\mathbb{A}'$ be the vectorial space $\mathbb{A}$ equipped with a structure of apartment of $-\mathbb{A}$: the fundamental chamber of $\mathbb{A}'$ is $C^{v,}_f=-C^v_f$ etc ... Let $\mathcal{I}'$ be the set $\mathcal{I}$, whose apartments are the $-A$ where $A$ runs over the apartment of $\mathbb{A}$. Then $\mathcal{I}'$ is a hovel of standard apartment $\mathbb{A}'$. We have $0\leq x$ in $\mathcal{I}$ and so $x\leq'0$ in $\mathcal{I}'$. 
@@ -629,7 +637,7 @@ Then the image $\pi$ of $g.\tau$ by $\rho_{+\infty}$ is a Hecke path of shape $-
 Let $E$ be as in the lemma~\ref{lemme description de Y^{++}}. 
  
 \begin{lemme}\label{lemme majoration du cardinal des boules}
- Let $\mu \in Q^\vee_-$. Let $H=-h(\mu)+1$. Let $\lambda\in Y^{++}$. We fix a writing  $\lambda=\lambda_{in}+\sum_{e\in E}\lambda_e e$, with $\lambda_{in}\in Y_{in}$ and $\lambda_e\in \mathbb{Z}_{\geq 0}$ for all $e\in E$. Let $J=\{e\in E | \lambda_e \geq H\}$. Then $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})\subset B^v(\lambda-H\sum_{e\in J} e-\sum_{e\notin J}\lambda_e e, H\sum_{e\in J}e+\sum_{e\notin J}\lambda_ e)$. 
+ Let $\mu \in Q^\vee_-$. Let $H=-h(\mu)+1$. Let $\lambda\in Y^{++}$. We fix a writing  $\lambda=\sum_{e\in E}\lambda_e e$, with $\lambda_e\in \N$ for all $e\in E$. Let $J=\{e\in E | \lambda_e \geq H\}$. Then $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})\subset B^v(\lambda-H\sum_{e\in J} e-\sum_{e\notin J}\lambda_e e, H\sum_{e\in J}e+\sum_{e\notin J}\lambda_ e)$. 
 \end{lemme}
  
 Proof : Let $m=|J|$. One writes $J=\{e_1,\ldots,e_m\}$ and for $i\in \llbracket 1,m\rrbracket$, one writes $\lambda_i$ instead or $\lambda_{e_i}$.
