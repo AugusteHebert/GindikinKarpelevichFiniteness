@@ -63,36 +63,42 @@
 
 
 \begin{abstract}
-In this paper, we give a proof of certain finiteness results about split Kac-Moody groups over a local non-archimedian field. Our results generalize those of "An affine Gindikin-Karpelevich" formula of A.Braverman, H.Garland, D.Kazhdan and M.Patnaik. We do not require our groups to be a affine. We use the hovel $\I$ associated to this situation, which is the analogue of the Bruhat-Tits building for a reductive group.
+In this paper, we give a proof of certain finiteness results about split Kac-Moody groups over a local non-archimedian field. Our results generalize those of "An affine Gindikin-Karpelevich" formula of A.Braverman, H.Garland, D.Kazhdan and M.Patnaik. We do not require our groups to be affine. We use the hovel $\I$ associated to this situation, which is the analogue of the Bruhat-Tits building for a reductive group.
 \end{abstract}
 
 \section{Introduction}
 
-Let $\mathcal{G}$ a split Kac-Moody group over an ultrametric field. By \cite{gaussent2008kac} and \cite{rousseau2012almost} one can associate a hovel $\I$ to $\mathcal{G}$, which has some properties. This is some kind of generalization of Bruhat-Tits buildings for reductive groups. Studying $\I$ enables to get information on $\mathcal{G}$. Let $(C,X,Y,(\alpha_i)_{i\in I},(\alpha_i^\vee)_{i\in I})$ be a generating root system associated to $\mathcal{G}$.  Let $\A=Y\otimes \R$. We will call $\A$ the standard apartment of $\I$. The hovel is a set covered with vectorial spaces isomorphic to $\A$ analogously to euclidean buildings.
+Let $\mathcal{G}$ a split Kac-Moody group over an ultrametric field. By \cite{gaussent2008kac} and \cite{rousseau2012almost} one can associate a hovel $\I$ to $\mathcal{G}$. This is some kind of generalization of Bruhat-Tits buildings for reductive groups. Studying $\I$ enables to get information on $\mathcal{G}$. In general, $\I$ is not a building : there may be two points such that no apartment of $\I$ contains these two points. However some properties of euclidian buildings remain, for example one can still define retraction onto an apartment centred at a sector-germ.
 
-Let $C_f^v=\{x\in \A|\alpha_i(x)>0\forall i\in I\}$. As in the case of euclidean buildings we can define a retraction $\rho_{+\infty}$ (resp. $\rho_{-\infty}$) of $\I$ on $\A$ with center $C_f^v$ (resp. $-C_f^v$). Let $Q^\vee=\bigoplus_{i\in I} \Z \alpha_i^\vee$ and $\A_{in}$ the inessential part of $\A$ : $\A_{in}=\{x\in \A |\alpha_i(x)=0\ \forall i\in I\}$. We can define a vectorial distance $d^v$ on a subset of $\I^2$ with values in $\overline{C_f^v}$. For $\lambda\in \overline{C_f^v}$, $B^v(0,\lambda)=\{x\in\I|d^v(0,x)\mathrm{\ is\ defined\ and\ }d^v(0,x)=\lambda\}$.
+
+Let $(C,X,Y,(\alpha_i)_{i\in I},(\alpha_i^\vee)_{i\in I})$ be a generating root system associated to $\mathcal{G}$.  Let $\A=Y\otimes \R$. We will call $\A$ the standard apartment of $\I$. The hovel is a set covered with vectorial spaces isomorphic to $\A$ analogously to euclidean buildings. 
+
+
+
+
+Let $C_f^v$ be the fundamental chamber of $\A$. Let $\rho_{+\infty}$ (resp. $\rho_{-\infty}$) be the retraction onto $\A$ centred at the germ $+\infty$ of $C_f^v$ (resp. centred at the germ $-\infty$ of $-C_f^v$). Let $Q^\vee=\bigoplus_{i\in I} \Z \alpha_i^\vee$ and $\A_{in}$ the inessential part of $\A$: $\A_{in}=\{x\in \A |\alpha_i(x)=0\ \forall i\in I\}$. We can define a vectorial distance $d^v$ on a subset of $\I^2$ with values in $\overline{C_f^v}$. For $\lambda\in \overline{C_f^v}$, $B^v(0,\lambda)=\{x\in\I|d^v(0,x)\mathrm{\ is\ defined\ and\ }d^v(0,x)=\lambda\}$.
 
 \vspace{3mm}
- The aim of this article is to show the following four theorems : 
+ The aim of this article is to show the following four theorems: 
 \vspace{3mm}
 
-Theorem~\ref{thm inclusion} :
+Theorem~\ref{thm inclusion}:
 Let $\mu\in \A$. Then if $\mu\notin Q_{\R}^\vee$, $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})$ is empty for all $\lambda\in \A$. If $\mu\in Q^\vee_{\R}$, then for $\lambda\in \A$ sufficiently dominant, $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\subset B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\}) $. 
 
 \vspace{3mm}
-Corollary~\ref{cor finitude des boules} :
+Corollary~\ref{cor finitude des boules}:
  Let $\mu\in Y+\A_{in}$. For all $\lambda\in Y+\A_{in}$ , $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\mu+\lambda\})$ is finite and is empty if $\mu\notin Q^\vee_-=\bigoplus _{i\in I}\Z_{\leq 0}\alpha_i^\vee$.
 
 \vspace{3mm}
-Theorem~\ref{thm invariance des cardinaux} : 
+Theorem~\ref{thm invariance des cardinaux}: 
 Let $\mu\in \A$ and $\lambda\in Y+\A_{in}$. Then $|\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap\rho_{-\infty}^{-1}(\{\lambda\})|=|\rho_{+\infty}^{-1}(\{\mu\})\cap\rho_{-\infty}^{-1}(\{0\})|$. Therefore theses sets are finite and if $\mu\notin Q^\vee_-$ they are empty (this is formulated slightly differently in the article).
 
 \vspace{3mm}
-Theorem~\ref{thm égalité des ensembles bis} :
+Theorem~\ref{thm égalité des ensembles bis}:
  Let $\mu\in Q^\vee$. Then for $\lambda\in Y^{++}+\A_{in}$ sufficiently dominant, $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})=\rho_{-\infty}^{-1}(\{\lambda\})\cap\rho_{+\infty}^{-1}(\{\lambda+\mu\})$.
 \vspace{3mm}
 
-These theorems generalize theorem 1.8 of \cite{braverman2014affine} because we do not require that $\mathcal{G}$ is affine. Corollary~\ref{cor finitude des boules} is a slight generalization of results from part 5 of\cite{gaussent2008kac}.
+These theorems generalize theorem 1.9 of \cite{braverman2014affine} because we do not require that $\mathcal{G}$ is affine. Corollary~\ref{cor finitude des boules} is a slight generalization of results from part 5 of\cite{gaussent2008kac}.
 \vspace{3mm}
 
 
@@ -100,11 +106,11 @@ The main tools used to show them are Hecke paths, which are defined and used in 
 
 In section~\ref{sect general frameworks} we set the general frameworks and the notation and we define hovels.
 
- In section~\ref{sect preliminaries} we first define two applications: $T_\nu:\I\rightarrow\R_+$ and $y_\nu:\I\rightarrow \A$, for fixed $\nu\in C_f^v$. For $x\in\I$, $T_\nu(x)$ measures the distance between a point and $\A$ along $\R_+\nu$ and $y_\nu(x)$ defines the projection of $x$ on $\A$ along $\R_+\nu$. We also determine the antecedents of some kinds paths by $\rho_{-\infty}$. 
+ In section~\ref{sect preliminaries} we first define two applications: $T_\nu:\I\rightarrow\R_+$ and $y_\nu:\I\rightarrow \A$, for a fixed $\nu\in C_f^v$. For $x\in\I$, $T_\nu(x)$ measures the distance between the point $x$ and the apartment $\A$ along $\R_+\nu$ and $y_\nu(x)$ defines the projection of $x$ on $\A$ along $\R_+\nu$. We also determine the antecedents of some kinds of paths by $\rho_{-\infty}$. 
  
  In section~\ref{sect bounding of T}, we show that under some conditions, $T_\nu$ is bounded and we deduce theorem~\ref{thm inclusion}. 
  
- In section~\ref{sect translations}, we study some kinds of translation of $\I$, which enables to show corollary~\ref{cor finitude des boules} and theorem~\ref{thm invariance des cardinaux}.
+ In section~\ref{sect translations}, we study some kinds of translation of $\I$, which enables to show Corollary~\ref{cor finitude des boules} and theorem~\ref{thm invariance des cardinaux}.
  
  In section~\ref{sect Y^++}, we show that $Y^{++}=Y\cap \overline{C_f^v}$ is a finitely generated monoid.
  
@@ -117,7 +123,7 @@ I thank Stéphane Gaussent for suggesting me this problem and for helping me in 
 
 \section{General frameworks}\label{sect general frameworks}
 \subsection{Root generating system}
-A Kac-Moody matrix (or generalized Cartan matrix) is a square matrix $C=(c_{i,j})_{i,j\in I}$ with integers coefficients, indexed by  a finite set $I$ and satisfying : 
+A Kac-Moody matrix (or generalized Cartan matrix) is a square matrix $C=(c_{i,j})_{i,j\in I}$ with integers coefficients, indexed by  a finite set $I$ and satisfying: 
 \begin{enumerate}
 \item $\forall i\in I,\ c_{i,i}=2$
 
@@ -126,7 +132,7 @@ A Kac-Moody matrix (or generalized Cartan matrix) is a square matrix $C=(c_{i,j}
 \item $\forall (i,j)\in I^2,\ c_{i,j}=0 \Leftrightarrow c_{j,i}=0$.
 \end{enumerate}
 
-A root generating system is a $5$-tuple $\mathcal{S}=(C,X,Y,(\alpha_i)_{i\in I},(\alpha_i^\vee)_{i\in I})$ made of a Kac-Moody matrix $C$ indexed by $I$, of two dual free $\Z$-modules $X$ (of characters) and $Y$ (of cocharacters) of finite rank $\mathrm{rk}(X)$, a family $(\alpha_i)_{i\in I}$ (of simple roots) in $X$ and a family $(\alpha_i^\vee)_{i\in I}$ (of simple coroots) in $Y$. They have to satisfy the following compatibility condition : $c_{i,j}=\alpha_j(\alpha_i^\vee)$ for all $i,j\in I$. We also suppose that the family $(\alpha_i)_{i\in I}$ is free in $X$ and that the family $(\alpha_i^\vee)_{i\in I}$ is free in $Y$.
+A root generating system is a $5$-tuple $\mathcal{S}=(C,X,Y,(\alpha_i)_{i\in I},(\alpha_i^\vee)_{i\in I})$ made of a Kac-Moody matrix $C$ indexed by $I$, of two dual free $\Z$-modules $X$ (of characters) and $Y$ (of cocharacters) of finite rank $\mathrm{rk}(X)$, a family $(\alpha_i)_{i\in I}$ (of simple roots) in $X$ and a family $(\alpha_i^\vee)_{i\in I}$ (of simple coroots) in $Y$. They have to satisfy the following compatibility condition: $c_{i,j}=\alpha_j(\alpha_i^\vee)$ for all $i,j\in I$. We also suppose that the family $(\alpha_i)_{i\in I}$ is free in $X$ and that the family $(\alpha_i^\vee)_{i\in I}$ is free in $Y$.
 
 
 
@@ -134,12 +140,12 @@ A root generating system is a $5$-tuple $\mathcal{S}=(C,X,Y,(\alpha_i)_{i\in I},
 
 
 
-Let $V=Y\otimes \R$. Every element of $X$ induces a linear form on $V$. We will consider $X$ as a subset of the dual $V^*$ of $V$ : the $\alpha_i$, $i\in I$ are viewed à vérifier as linear form on $V$. For $i\in I$, we define an involution $r_i$ of $V$ by $r_i(v)=v-\alpha_i(v)\alpha_i^\vee$ for all $v\in V$. This is a reflection of hyperplane $\ker \alpha_i$. The subgroup of $\mathrm{GL}(V)$ generated by the $\alpha_i$ for $i\in I$ is denoted by $W^v$ and is called the Weyl group of $\mathcal S$.
+Let $V=Y\otimes \R$. Every element of $X$ induces a linear form on $V$. We will consider $X$ as a subset of the dual $V^*$ of $V$: the $\alpha_i$, $i\in I$ are viewed as linear form on $V$. For $i\in I$, we define an involution $r_i$ of $V$ by $r_i(v)=v-\alpha_i(v)\alpha_i^\vee$ for all $v\in V$. Its space of fixed points is $\ker \alpha_i$. The subgroup of $\mathrm{GL}(V)$ generated by the $\alpha_i$ for $i\in I$ is denoted by $W^v$ and is called the Weyl group of $\mathcal S$.
 
 
-For $x\in V$ we let $\alpha(x)=(\alpha_i)_{i\in I}\in \R^I$.
+For $x\in V$ we let $\alpha(x)=(\alpha_i(x))_{i\in I}\in \R^I$.
 
-Let  $Q^\vee=\bigoplus_{i\in I}\Z\alpha_i^\vee$ and $P^\vee=\{y\in V |\alpha(v)\in \Z^I\}$. We call  $Q^\vee$ the \textit{coroot-lattice} and $P^\vee$ the \textit{root-lattice}. Let $Q_+^\vee=\bigoplus_{i\in I}\N \alpha_i^\vee$ and $Q^\vee_{\mathbb{R}}=\bigoplus_{i\in I}\R\alpha_i^\vee$. This enables us to define a preorder $\leq_{Q^\vee}$ on $V$ by the following way : for all $x,y\in V$, one writes $x\leq_{Q^\vee}y$ if $y-x\in Q^\vee_+$. 
+Let  $Q^\vee=\bigoplus_{i\in I}\Z\alpha_i^\vee$ and $P^\vee=\{v\in V |\alpha(v)\in \Z^I\}$. We call  $Q^\vee$ the \textit{coroot-lattice} and $P^\vee$ the \textit{coweight-lattice} (but if $\bigcap_{i\in I}\ker \alpha_i\neq \{0\}$, this is not a lattice). Let $Q_+^\vee=\bigoplus_{i\in I}\N \alpha_i^\vee$ and $Q^\vee_{\mathbb{R}}=\bigoplus_{i\in I}\R\alpha_i^\vee$. This enables us to define a preorder $\leq_{Q^\vee}$ on $V$ by the following way: for all $x,y\in V$, one writes $x\leq_{Q^\vee}y$ if $y-x\in Q^\vee_+$. 
 
 
 
@@ -149,15 +155,15 @@ Let $V_{in}=\bigcap_{i\in I}\ker \alpha_i$. Then one has $Y+V_{in}\subset P^\vee
 
 \begin{rque}
 Suppose $Y+V_{in}\varsubsetneq P^\vee$. Then one can construct a generating root system $(C,X,Y,(\alpha_i')_{i\in I},(\alpha_i'^\vee)_{i\in I})$ such that $P'^\vee=\{x\in V|\forall i\in I, \alpha_i(x)\in \Z\}=Y+V_{in}$ by the following way.
- Let $n=\mathrm{rk} X$ and suppose $I\subset\llbracket 1,n\rrbracket$. Let $e_1,\ldots,e_n$ a $\mathbb{Z}$-basis of $X$. For $i\in I$ one writes 
-$\alpha_i^\vee=\sum\beta_{i,j}e_j$. For $i\in I$, with $\beta_{i,j}\in \Z$. Let 
+ Let $n=\mathrm{rk} X$ and suppose $I\subset\llbracket 1,n\rrbracket$. Let $e_1,\ldots,e_n$ be a $\mathbb{Z}$-basis of $X$. For $i\in I$ one writes 
+$\alpha_i^\vee=\sum_{j=1}^n\beta_{i,j}e_j$, with $\beta_{i,j}\in \Z$ for all $j\in\llbracket 1,n\rrbracket$. For $i\in I$, let 
 $d_i=\gcd\big((\beta_{i,j})_{j\in \llbracket 1 ,n\rrbracket}\big)$,  $\alpha_i'=\frac{\alpha_i}{d_i}$ and $\alpha_i^\vee=d_i\alpha_i^\vee$. Then one can complete $(\alpha_i')_{i\in I}$ in a $\Z$-basis $(\alpha_i')_{i\in \llbracket 1, n\rrbracket} $ of $X$. Let $x\in \Z^n$. There exists $u\in Y$ such that $(\alpha'_i(u))_{i\in \llbracket 1,n\rrbracket}=x$ and in particular, for all $x\in \Z^I$, there exists $u\in Y$ such that $(\alpha'_i(u))_{i\in I}=x$, and therefore $P'^\vee=\{x\in V|\forall i\in I, \alpha_i(x)\in \Z\}=Y+V_{in}.$
 \end{rque}
 
 \subsection{Vectorial faces}
 
-Define $C_f^v=\{u\in V|\ \alpha_i(v)>0\}$. We call it the \textit{fundamental chamber}. For $J\subset I$, one sets $F^v(J)=\{v\in V|\alpha_i(v)=0\ \forall i\in J,\alpha_i(v)>0\ \forall i\in J\backslash I\}$. Then the closure $\overline{C_f^v}$ of $C_f^v$ is the union of the $F^v(J)$ for $J\subset I$. The \textit{positive} (resp. \textit{negative}) \textit{vectorial faces} are the sets $w.F^v(J)$ for $w\in W^v$ and $J\subset I$.  We call \textit{positive chamber} (resp. \textit{negative}) every cone  of the shape $w.C_f^v$ for some $w\in W^v$.  For all $x\in C_f^v$ and for all $w\in W^v$, $w.x=x$ implies that $w=1$. In particular the action of $w$ on the positive chambers is simply transitive. The \textit{Tits cone} $\mathcal T$ is defined by $\mathcal{T}=\bigcup_{w\in W^v} w.\overline{C^v_f}$. We also consider the negative cone $-\mathcal{T}$.
-We define a $W^v$ invariant relation $\leq$ on $V$ by : $\forall (x,y)\in V\mathrm{}^2$, $x\leq y\ \Leftrightarrow\ y-x\in \mathcal{T}$.
+Define $C_f^v=\{u\in V|\ \alpha_i(v)>0\}$. We call it the \textit{fundamental chamber}. For $J\subset I$, one sets $F^v(J)=\{v\in V|\alpha_i(v)=0\ \forall i\in J,\alpha_i(v)>0\ \forall i\in J\backslash I\}$. Then the closure $\overline{C_f^v}$ of $C_f^v$ is the union of the $F^v(J)$ for $J\subset I$. The \textit{positive} (resp. \textit{negative}) \textit{vectorial faces} are the sets $w.F^v(J)$ for $w\in W^v$ (resp. $-w.F^v(J)$) and $J\subset I$. A \textit{vectorial face} is either a positive vectorial face or a negative vectorial face. We call \textit{positive chamber} (resp. \textit{negative}) every cone  of the shape $w.C_f^v$ for some $w\in W^v$ (resp. $-w.C_f^v$).  For all $x\in C_f^v$ and for all $w\in W^v$, $w.x=x$ implies that $w=1$. In particular the action of $w$ on the positive chambers is simply transitive. The \textit{Tits cone} $\mathcal T$ is defined by $\mathcal{T}=\bigcup_{w\in W^v} w.\overline{C^v_f}$. We also consider the negative cone $-\mathcal{T}$.
+We define a $W^v$ invariant relation $\leq$ on $V$ by: $\forall (x,y)\in V\mathrm{}^2$, $x\leq y\ \Leftrightarrow\ y-x\in \mathcal{T}$.
 
 
 \subsection{Filters}
@@ -170,21 +176,21 @@ If $F$ is a filter in a set $E$, and $E'$ is a subset of $E$, one says that $F$ 
 
 If $x\in V\mathrm{}$ and $\Omega$ is a subset of $V$ containing $x$ in its closure, then the \textit{germ} of $\Omega$ in $x$ is the filter $germ_x(\Omega)$ of subsets of $V$ containing a neighbourhood of $x\in \Omega$.
 
-A \textit{sector} in $V$ a set of the shape $\mathfrak{s}=x+C^v$ with $C_f^v=\pm w.C_f^v$ for some $x\in \mathbb{A}$ and $w\in W^v$. The point $x$ is its \textit{base point} and $C^v$ is its \textit{direction}. The intersection of two sectors of the same direction contains a sector of the same direction.
+A \textit{sector} in $V$ is a set of the shape $\mathfrak{s}=x+C^v$ with $C^v=\pm w.C_f^v$ for some $x\in \mathbb{A}$ and $w\in W^v$. The point $x$ is its \textit{base point} and $C^v$ is its \textit{direction}. The intersection of two sectors of the same direction contains a sector of the same direction.
 
 
 
 A \textit{sector-germ} of a sector $\mathfrak{s}=x+C^v$ is the filter $\mathfrak{S}$ of subsets of $V$ containing a $V$-translate of $\mathfrak{s}$. It only depends on the direction $C^v$. We denote by $+\infty$ (resp. $-\infty$) the sector-germ of $C_f^v$ (resp. of $-C_f^v$).
 
 
-One defines an action of the group $W^v$ on $V^*$ by the following way : if $x\in V$, $w\in W^v$ and $\alpha\in V^*$ then $(w.\alpha)(x)=\alpha(w^{-1}.x)$. Let $\phi=\{w.\alpha_i|(w,i)\in W^v\times I\}$. Then $\Phi\subset \sum_{i\in I}\Z\alpha_i$. For $\alpha\in \Phi$ and $k\in \mathbb{Z}$, let $M(\alpha,k)=\{x\in V\mathrm{}|\alpha(x)=k\}$. Let $W^a$ the subgroup of $\mathrm{GA}(V\mathrm{})$ of elements stabilizing $\bigcup_{\alpha \in \Phi, k\in \Z} M(\alpha,k)$, where $\mathrm{GA}(V\mathrm{})$ is the set of affine isomorphisms of $V$. Then $W^a\supset W^v$.
+One defines an action of the group $W^v$ on $V^*$ by the following way: if $x\in V$, $w\in W^v$ and $\alpha\in V^*$ then $(w.\alpha)(x)=\alpha(w^{-1}.x)$. Let $\Phi=\{w.\alpha_i|(w,i)\in W^v\times I\}$. Then $\Phi\subset \sum_{i\in I}\Z\alpha_i$. For $\alpha\in \Phi$ and $k\in \mathbb{Z}$, let $M(\alpha,k)=\{x\in V\mathrm{}|\alpha(x)=k\}$. Let $W^a$ the subgroup of $\mathrm{GA}(V\mathrm{})$ of all elements stabilizing $\bigcup_{\alpha \in \Phi, k\in \Z} M(\alpha,k)$, where $\mathrm{GA}(V\mathrm{})$ is the set of affine isomorphisms of $V$. Then $W^a\supset W^v$.
 
 
-A ray $\delta$ with base point $x$ and containing $y\neq x$ (or the interval $]x,y]=[x,y]\backslash\{x\}$ or $[x,y]$) is called \textit{preordered} if $x\leq y$ or $y\leq x$ and \textit{generic} if $y-x\in \pm\mathring \T$. 
+A ray $\delta$ with base point $x$ and containing $y\neq x$ (or the interval $]x,y]=[x,y]\backslash\{x\}$ or $[x,y]$) is called \textit{preordered} if $x\leq y$ or $y\leq x$ and \textit{generic} if $y-x\in \pm\mathring \T$, the interior of $\pm \T$. 
 
 
 
-In the next subsection, we define the notions of faces, enclosures and of chimneys defined in \cite{rousseau2011masures} 1.7 and 1.10 and in  \cite{gaussent2014spherical} 1.4. For a first reading, one can just know the following facts about these objects and skip this subsection :
+In the next subsection, we define the notions of faces, enclosures and chimneys defined in \cite{rousseau2011masures} 1.7 and 1.10 and in  \cite{gaussent2014spherical} 1.4. For a first reading, one can just know the following facts about these objects and skip this subsection:
 
 \begin{enumerate}
 
@@ -196,7 +202,8 @@ In the next subsection, we define the notions of faces, enclosures and of chimne
 
 \item A sector is a chimney which is solid and splayed.
 
-\item The germ of a sector viewed as a chimney is the germ of the sector.
+\item If a chimney is a sector, its germ as a chimney coincides with its germ as a sector. 
+
 
 \item Every $x\in V\mathrm{}$ is in some face of $V$.
 
@@ -211,21 +218,23 @@ In the next subsection, we define the notions of faces, enclosures and of chimne
 \subsection{Definitions of enclosures, faces, chimneys and related notions}
 
 
-Let $\Delta=\phi\cup\Delta_{im}^+\cup\Delta_{im}^-$ be the set of all roots, defined in  \cite{kac1994infinite}. One has $\Delta\subset V^*$. For $\alpha\in \Delta$, and $k\in \Z\cup{+\infty}$, let $D(\alpha,k)=\{v\in V| \alpha(v)+k\geq 0\}$ (and $D(\alpha,+\infty)=V\mathrm{}$ for all $\alpha\in \Delta$) and $D^\circ(\alpha,k)=\{v\in V| \alpha(v)+k > 0\}$ (for $\alpha\in \Delta$ and $k\in \Z\cup\{+\infty\}$).
+Let $\Delta=\Phi\cup\Delta_{im}^+\cup\Delta_{im}^-\subset Q$, where $Q=\bigoplus_{i\in I}\Z\alpha_i$ be the set of all roots, defined in  \cite{kac1994infinite}. The group $W^v$ stabilizes $\Delta$. For $\alpha\in \Delta$, and $k\in \Z\cup{+\infty}$, let $D(\alpha,k)=\{v\in V| \alpha(v)+k\geq 0\}$ (and $D(\alpha,+\infty)=V\mathrm{}$ for all $\alpha\in \Delta$) and $D^\circ(\alpha,k)=\{v\in V| \alpha(v)+k > 0\}$ (for $\alpha\in \Delta$ and $k\in \Z\cup\{+\infty\}$).
 
-Given a filter $F$ of subsets of $V$, its \textit{enclosure} $\mathrm{cl}_V\mathrm{}(F)$ is the filter made of subsets of $V$ containing an element of $F$ of the shape $\bigcap_{\alpha\in \Delta}D(\alpha,k_\alpha)$ where $k_\alpha\in \Z\cup\{+\infty\}$ for all $\alpha\in \Delta$.
+Given a filter $F$ of subsets of $V$, its \textit{enclosure} $\mathrm{cl}_V\mathrm{}(F)$ is the filter made of the subsets of $V$ containing an element of $F$ of the shape $\bigcap_{\alpha\in \Delta}D(\alpha,k_\alpha)$ where $k_\alpha\in \Z\cup\{+\infty\}$ for all $\alpha\in \Delta$.
 
-A \textit{face} $F$ in an apartment $V$ is a filter associated to a point $x\in V\mathrm{}$ and a vectorial face $F^v\in V$. More precisely, a subset $S$ of $V$ is an element of the face $F=F(x,F^v)$ if and only if, it contains an intersection of half-spaces $D(\alpha,k_\alpha)$ or open half-spaces $D^\circ(\alpha,k_\alpha)$, with $k_\alpha\in \Z$ for all $\alpha\in \Delta$, that contains $\Omega\cap (x+F^v)$, where $\Omega$ is an open neighbourhood of $x$ in $V$.
+A \textit{face} $F$ in $V$ is a filter associated to a point $x\in V\mathrm{}$ and a vectorial face $F^v\subset V$. More precisely, a subset $S$ of $V$ is an element of the face $F=F(x,F^v)$ if and only if, it contains an intersection of half-spaces $D(\alpha,k_\alpha)$ or open half-spaces $D^\circ(\alpha,k_\alpha)$, with $k_\alpha\in \Z$ for all $\alpha\in \Delta$, that contains $\Omega\cap (x+F^v)$, where $\Omega$ is an open neighbourhood of $x$ in $V$.
 
-There is an order on the faces: if $F\subset \overline{F'}$ we say that "$F$ is a face of $F'$" or "$F'$ contains $F$". The dimension of a face $F$ is the smallest dimension of an affine space generated by some $S\in F$. Such an affine space is unique and is called its support. A face is said to be \textit{spherical} if the direction of its support meets the open Tits cone $\mathring \T$; then its pointwise stabilizer $W_F$ in $W$ is finite.
+There is an order on the faces: if $F\subset \overline{F'}$ we say that "$F$ is a face of $F'$" or "$F'$ contains $F$". The dimension of a face $F$ is the smallest dimension of an affine space generated by some $S\in F$. Such an affine space is unique and is called its support. A face is said to be \textit{spherical} if the direction of its support meets the open Tits cone $\mathring \T$ or its opposite $-\mathring \T$; then its pointwise stabilizer $W_F$ in $W^v$ is finite.
+
+We have $W^a\subset P^\vee \rtimes W^v$. As $\alpha(P^\vee)\subset \Z$ for all $\alpha$ in $\sum_{i\in I}\Z \alpha_i$, if $\tau$ is a translation of $V$ of a vector $p\in P^\vee$, then for all $\alpha\in \Q$ $\tau$ permutes the sets of the shape $D(\alpha,k)$ where $k$ runs over $\Z$. As $W^v$ stabilizes $\Delta$, any element of $W^v$ permutes the sets of the shape $D(\alpha,k)$ where $\alpha$ runs over $\Delta$. Therefore, $W^a$ permutes the sets $D(\alpha,k)$, where $(\alpha,k)$ runs over $\Delta\times \Z$ and thus $W^a$ permutes the enclosures, faces, chimneys, ... of $V$.
 
 A \textit{chamber} (or alcove) is a maximal face, or equivalently, a face such that all its elements contains a nonempty open subset of $V$.
 
 A \textit{panel} is a spherical face maximal among faces that are not chambers or, equivalently, a spherical face of dimension $n-1$.
 
-A \textit{chimney} in $V$ is associated to a face $F=F(x,F_0^v)$ and to a vectorial face $F^v$; it is the filter $\tau(F,F^v)=\mathrm{cl}_\mathbb{A}(F+F^v)$. The face $F$ is the basis of the chimney and the vectorial face $F^v$ its direction. A chimney is \textit{splayed} if $F^v$ is spherical, and it is \textit{solid} if its support (as a filter, i.e., the smallest affine subspace  containing $\tau$) has a finite pointwise stabilizer in $W^v$. As splayed chimney is therefore solid. 
+A \textit{chimney} in $V$ is associated to a face $F=F(x,F_0^v)$ and to a vectorial face $F^v$; it is the filter $\mathfrak{r}(F,F^v)=\mathrm{cl}_\mathbb{A}(F+F^v)$. The face $F$ is the basis of the chimney and the vectorial face $F^v$ its direction. A chimney is \textit{splayed} if $F^v$ is spherical, and it is \textit{solid} if its support (as a filter, i.e., the smallest affine subspace  containing $\mathfrak{r}$) has a finite pointwise stabilizer in $W^v$. As splayed chimney is therefore solid. 
 
-A \textit{shortening} of a chimney $\tau(F,F^v)$, with $F=F(x,F_0^v)$ is a chimney of the shape $\tau \big((F(x+\xi),F_0^v),F^v\big)$ with $\xi\in \overline{F^v}$ (this definition is slightly different from the one of \cite{rousseau2011masures} 1.12 but follows \cite{rousseau2012almost} 3.6). The \textit{germ} of a chimney $\tau$ is the filter of subsets of $V$ containing a shortening of $\tau$.
+A \textit{shortening} of a chimney $\mathfrak{r}(F,F^v)$, with $F=F(x,F_0^v)$ is a chimney of the shape $\mathfrak{r} \big((F(x+\xi),F_0^v),F^v\big)$ with $\xi\in \overline{F^v}$ (this definition is slightly different from the one of \cite{rousseau2011masures} 1.12 but follows \cite{rousseau2012almost} 3.6). The \textit{germ} of a chimney $\mathfrak{r}$ is the filter of subsets of $V$ containing a shortening of $\mathfrak{r}$.
 
 
 
@@ -234,10 +243,10 @@ A \textit{shortening} of a chimney $\tau(F,F^v)$, with $F=F(x,F_0^v)$ is a chimn
 We now denote by $\A$ the affine space $V$ equipped with its faces, chimneys, ...
 
 
-An apartment of type $\A$ is a set $A$ with a nonempty set $\mathrm{Isom}(\A,A)$ of bijections (called isomorphisms) such that if $f_0\in \mathrm{Isom}(\A,A)$ then $f\in \mathrm{Isom}(\A,A)$ if and only if, there exists $W\in W^a$ satisfying $f=f_0\circ w$. An isomorphism between two apartments $\phi:A\rightarrow A'$ is a bijection such that ($f\in \mathrm{Isom}(\mathbb{A},A)$ if, and only if, $\phi \circ f\in \mathrm{Isom}(\A,A')$). We extend all the notions that are preserved by $W^a$ to each apartment. By the fact~\ref{fait sur les faces} of the above subsection, sectors, enclosures, faces and chimney are well defined in any apartment of type $\A$.
+An apartment of type $\A$ is a set $A$ with a nonempty set $\mathrm{Isom}(\A,A)$ of bijections (called isomorphisms) such that if $f_0\in \mathrm{Isom}(\A,A)$ then $f\in \mathrm{Isom}(\A,A)$ if and only if, there exists $w\in W^a$ satisfying $f=f_0\circ w$. An isomorphism between two apartments $\phi:A\rightarrow A'$ is a bijection such that ($f\in \mathrm{Isom}(\mathbb{A},A)$ if, and only if, $\phi \circ f\in \mathrm{Isom}(\A,A')$). We extend all the notions that are preserved by $W^a$ to each apartment. By the fact~\ref{fait sur les faces} of the above subsection, sectors, enclosures, faces and chimney are well defined in any apartment of type $\A$.
 
 \begin{defn}
-An ordered affine hovel of type $\A$ is a set $\mathcal{I}$ endowed with a covering $\mathcal{A}$ of subsets called apartments such that : 
+An ordered affine hovel of type $\A$ is a set $\mathcal{I}$ endowed with a covering $\mathcal{A}$ of subsets called apartments such that: 
 
 (MA1) Any $A\in \mathcal{A}$ admits a structure of an apartment of type $\A$.
 
@@ -278,13 +287,13 @@ b) Let $x,y\in \I$ and suppose that for some $g\in G$, $g.y-g.x\in \overline{C_f
 \subsection{Retractions and Hecke paths}
 
 
-Let  $\mathfrak{R}$ be the germ of a splayed chimney of an apartment $A$. Let $x\in \I$. By (MA3), for all $x\in \I$, there exists an apartment $A_x$ of $\I$ containing $x$ and $\mathfrak{R}$. By (MA4), there exists an apartment $\phi:A_x\rightarrow A$ fixing $\mathfrak{R}$. By \cite{rousseau2011masures} 2.6, $\phi(x)$ does not depend of the choices we made and thus we can let $\rho_{A,\mathfrak{R}}(x)=\phi(x)$.
+Let  $\mathfrak{R}$ be the germ of a splayed chimney of an apartment $A$. Let $x\in \I$. By (MA3), for all $x\in \I$, there exists an apartment $A_x$ of $\I$ containing $x$ and $\mathfrak{R}$. By (MA4), there exists an apartment $\phi:A_x\rightarrow A$ fixing $\mathfrak{R}$. By \cite{rousseau2011masures} 2.6, $\phi(x)$ does not depend on the choices we made and thus we can let $\rho_{A,\mathfrak{R}}(x)=\phi(x)$.
 
-The application $\rho_{A,\mathfrak{R}}$ is a retraction from $\I$ on $A$. It only depends on $\mathfrak{R}$ and $A$ and we call it the \textit{retraction from $\I$ on $A$ of center $\mathfrak{R}$}. 
+The application $\rho_{A,\mathfrak{R}}$ is a retraction from $\I$ onto $A$. It only depends on $\mathfrak{R}$ and $A$ and we call it the \textit{retraction onta $A$ centred at $\mathfrak{R}$}. 
 
 We denote by $\rho_{+\infty}$ (resp. $\rho_{-\infty}$ ) the retraction on $\A$ of center $+\infty$ (resp. $-\infty$).
 
-We now defines Hecke paths. They are more or less the images by $\rho_{-\infty}$ of segments $[x,y]$ in $\I$. The definition is a bit technical but it expresses the fact that the image of such a path "goes nearer $+\infty$" when it crosses a wall. A consequence of that is remark~\ref{rque chemins de Hecke} and we will not use directly this definition in the following.
+We now defines Hecke paths. They are more or less the images by $\rho_{-\infty}$ of segments $[x,y]$ in $\I$. The definition is a bit technical but it expresses the fact that the image of such a path "goes nearer to $+\infty$" when it crosses a wall. A consequence of that is Remark~\ref{rque chemins de Hecke} and we will not use directly this definition in the following.
 
  We consider piecewise linear continuous paths $\pi:[0,1]\rightarrow \A$ such that the values  of $\pi'$ belong to some orbit $W^v.\lambda$ for some $\lambda\in \overline{C_f^v}$. Such a path is called a $\lambda$-\textit{path}. It is increasing with respect to the preorder relation $\leq$ on $\A$. For any $t\neq 0$ (resp. $t\neq 1$), we let $\pi'_-(t)$ (resp. $\pi'_+(t))$ denote the derivative of $\pi$ at $t$ from the left (resp. from the right).
 
@@ -313,11 +322,16 @@ Let $\pi:[0,1]\rightarrow \A$ a Hecke path of shape $\lambda\in \overline{C_f^v}
 
 In this part we begin by defining for all $\nu\in C_f^v$ two applications $y_\nu:\I\rightarrow \A$ and $T_\nu:\I\rightarrow \R_+$, where for all $x\in \I$, $T_\nu(x)$ and $y_\nu(x)$ can be considered as the distance between $x$ and $\A$ along $\R_+\nu$ and the projection of $x$ on $\A$ along $\R_+\nu$. 
 
-We also show that the only antecedent of some paths for $\rho_{-\infty}$ are themselves (this is lemma~\ref{lemme image réciproque de segments}).
+We also show that the only antecedent of some paths for $\rho_{-\infty}$ are themselves (this is Lemma~\ref{lemme image réciproque de segments}).
 
 \vspace{3mm}
+Recall that we want to prove Theorem~\ref{thm inclusion}: Let $\mu\in \A$. Then if $\mu\notin Q_{\R}^\vee$, $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})$ is empty for all $\lambda\in \A$. If $\mu\in Q^\vee_{\R}$, then for $\lambda\in \A$ sufficiently dominant, $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\subset B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\}) $.
 
-Let us sketch the proof of theorem~\ref{thm inclusion}. We fix $\nu\in C_f^v$ and $\mu\in Q^\vee_\R$. Let $T^-=T_{\nu}^-$ and $y^-=y_\nu^-$ be the analogue of $T_\nu$ and $y_\nu$ with $\nu$ replaced by $-\nu$. We show that if $\lambda\in \A$, $T^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\big)$ is bounded by some constant $h(\mu)$ (this is corollary~\ref{corollaire majoration de T}), which uses lemma~\ref{lemme image réciproque de segments} and lemma~\ref{lemme fin des chemins de Hecke longs}). Therefore, for $\lambda$ sufficiently dominant, $y^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\big)\subset C_f^v$ and lemma~\ref{lemme_rétraction et distance vectorielle} complete the proof.
+
+
+
+
+Let us sketch the proof this theorem~\ref{thm inclusion}. We fix $\nu\in C_f^v$ and $\mu\in Q^\vee_\R$. Let $T^-=T_{\nu}^-$ and $y^-=y_\nu^-$ be the analogue of $T_\nu$ and $y_\nu$ with $\nu$ replaced by $-\nu$. We show that if $\lambda\in \A$, $T^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\big)$ is bounded by some constant $h(\mu)$ (this is Corollary~\ref{corollaire majoration de T}), which uses Lemma~\ref{lemme image réciproque de segments} and Lemma~\ref{lemme fin des chemins de Hecke longs}). Therefore, for $\lambda$ sufficiently dominant, $y^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\big)\subset C_f^v$ and Lemma~\ref{lemme_rétraction et distance vectorielle} complete the proof.
 
 \vspace{3mm}
 Let us recall briefly the notion of parallelism in $\I$. This is done more completely in \cite{rousseau2011masures} part 3. Let $\delta$ and $\delta'$ be two generic rays in $\I$. Then there exists a splayed chimney $R$ containing $\delta$ and a solid chimney $F$ containing $\delta'$. By (MA3) there exists an apartment $A$ containing the germ $\mathfrak{R}$ of $R$ and $F$. Therefore $A$ contains translates of $\delta$ and $\delta'$ and we say that $\delta$ and $\delta'$ are \textit{parallel}, if these translates are parallel in $A$. Parallelism is an equivalence relation and its equivalence classes are called \textit{directions}.
@@ -326,7 +340,7 @@ Let us recall briefly the notion of parallelism in $\I$. This is done more compl
 Let $x\in \I$ and $\delta$ be a generic ray. Then there exists a unique $ray$ $x+\delta$ in $\I$ with base point $x$ and direction $\delta$. In any apartment $A$ containing $x$ and a ray $\delta'$ parallel to $\delta$, this ray is the translate in $A$ of $\delta'$ having $x$ as a base point.
 \end{lemme}
 
-This lemme is analogous to proposition 4.7 1) of \cite{rousseau2011masures}. The difficult part of this lemma is the uniqueness of such a ray because second assertion of the term of the lemma yields a way to construct a ray having direction $\delta$ and $x$ as a base point. This uniqueness can be shown exactly in the same manner as the proof of proposition 4.7.1) by replacing "spherical sector face" by "generic ray". This is possible by NB.a) of proposition 2.7 and by 2.2 3) (or by remark~\ref{rque axioms MA3 et MA4 modifiés} of this paper) of \cite{rousseau2011masures}.
+This lemma is analogous to Proposition 4.7 1) of \cite{rousseau2011masures}. The difficult part of this lemma is the uniqueness of such a ray because second part of the lemma yields a way to construct a ray having direction $\delta$ and $x$ as a base point. This uniqueness can be shown exactly in the same manner as the proof of Proposition 4.7.1) by replacing "spherical sector face" by "generic ray". This is possible by NB.a) of Proposition 2.7 and by 2.2 3) (or by Remark~\ref{rque axioms MA3 et MA4 modifiés} of this paper) of \cite{rousseau2011masures}.
 
 
 \paragraph{Definition of $y_\nu$ and $T_\nu$ (resp. $y^-_\nu$ and $T^-_\nu$)}
@@ -338,9 +352,12 @@ One has $\rho_{+\infty}(x+\delta)=\rho_{+\infty}(x)+\delta$ and $y\in \rho_{+\in
 
 Let $\delta^-=-\R_+\nu$ and $x\in \I$. Similarly, one defines $y_\nu^-$ as the first point of $x+\delta^-$ meeting $\A$ and $T^-_\nu(x)$ as the element $T$ of $\R_+$ such that $\rho_{-\infty}(x)=y+T\nu$.
 
+
 \begin{rque}
-Except in the proof of lemma~\ref{lemme distance vectorielle} b), the choice of $\nu$ will not be important.
+In the following, the choice of $\nu$ will not be very important. We will sometimes need that $\nu\in Y\cap C_f^v$.
 \end{rque}
+
+Let $\I_0=G.0$.
 
 
 \begin{lemme}\label{lemme distance vectorielle}
@@ -348,34 +365,34 @@ Let $x\in \mathcal{I}$ and $\nu\in C_f^v$. Let $y=y_\nu(x)$ and $T=T_\nu(x)$.
 
 a)  Then $x\leq y$ and $d^v(x,y)=T\nu$.
 
-b) One has $\rho_{+\infty}(x)\in Y$ if and only if $\rho_{-\infty}(x)\in Y$ if and only if $x\in \mathcal I_0=G.0$. In this case, $\rho_{+\infty}(x)\leq_{Q^\vee} \rho_{-\infty}(x)$.
+b) One has $\rho_{+\infty}(x)\in Y$ if and only if $\rho_{-\infty}(x)\in Y$ if and only if $x\in \mathcal I_0$. In this case, $\rho_{+\infty}(x)\leq_{Q^\vee} \rho_{-\infty}(x)$.
 
 
 \end{lemme}
 
-Proof : Let $A$ be an apartment containing $x$ and $+\infty$ and $g\in G$ fixing $+\infty$ such that $A=g^{-1}.\A$. Then $x+\delta$ is the translate of a shortening $\delta'\subset A$ of $\delta$ (which means $\delta'=z+\delta$, with $z\in \delta$). As for all $z'\in z+\delta$, $z\leq z'$, one has $x\leq y$. As $d^v(x,y)=d^v(g.x,g.y)$ and $g_{|A}=\rho_{+\infty}$ one gets a).
+Proof: Let $A$ be an apartment containing $x$ and $+\infty$ and $g\in G$ fixing $+\infty$ such that $A=g^{-1}.\A$. Then $x+\delta$ is the translate of a shortening $\delta'\subset A$ of $\delta$ (which means $\delta'=z+\delta$, with $z\in \delta$). As for all $z'\in z+\delta$, $z\leq z'$, one has $x\leq y$. As $d^v(x,y)=d^v(g.x,g.y)$ and $g_{|A}=\rho_{+\infty}$ one gets a).
 
 For $x\in\mathcal{I}$, there exists $g_-,g_+\in G$ such that $\rho_{-\infty}(x)=g_-.x$ and $\rho_{+\infty}(x)=g_+.x$, which shows the claimed equivalence because $Y=G.0\cap \mathbb{A}$.
 
 Suppose $x\in \mathcal{I}_0$. One chooses $\nu\in Y\cap C_f^v$. Let $S=\lfloor T\rfloor +1$, where $\lfloor.\rfloor$ is the floor function, and $z=\rho_{+\infty}(x)+S\nu\in x+\delta$. Then $d^v(x,z)=d^v(g_+.x,g_+.z)=d^v(\rho_{+\infty}(x),z)=S\nu\in Y^{++}$.
 
-According to paragraph 2.3 of \cite{gaussent2014spherical}, the image $\pi$ of $[x,z]$ by $\rho_{-\infty}$ is a Hecke path of shape $z-\rho_{+\infty}(x)=S\nu$ with respect to $-C^v_f$ (unless the contrary is specified, "Hecke path" will mean with respect to $-C^v_f$). By applying lemma 2.4b) of \cite{gaussent2014spherical} to $\pi$, one gets that $z-\rho_{-\infty}(x)\leq _{Q^\vee} d^v(x,z)=z-\rho_{+\infty}(x)$ and thus $\rho_{+\infty}(x)\leq_{Q^\vee} \rho_{-\infty}(x)$ and one has b). $\square$
+According to paragraph 2.3 of \cite{gaussent2014spherical}, the image $\pi$ of $[x,z]$ by $\rho_{-\infty}$ is a Hecke path of shape $z-\rho_{+\infty}(x)=S\nu$ with respect to $-C^v_f$ (unless the contrary is specified, "Hecke path" will mean with respect to $-C^v_f$). By applying Lemma 2.4b) of \cite{gaussent2014spherical} to $\pi$, one gets that $z-\rho_{-\infty}(x)\leq _{Q^\vee} d^v(x,z)=z-\rho_{+\infty}(x)$ and thus $\rho_{+\infty}(x)\leq_{Q^\vee} \rho_{-\infty}(x)$ and one has b). $\square$
 
 
 \begin{lemme}\label{lemme image réciproque de segments}
 Let $\tau:[0,1]\rightarrow \mathcal{I}$ a segment of $\mathcal{I}$ such that $\tau(1)\in \mathbb{A}$ and $\rho_{-\infty}\circ\tau$ is a segment of $\mathbb{A}$ satisfying  $(\rho_{-\infty}\circ\tau)'=\nu\in \overline{C^v_f}$. Then $\tau([0,1])\subset \mathbb{A}$ and thus $\rho_{-\infty}\circ \tau=\tau$.
 \end{lemme}
 
-Proof : Suppose $\tau([0,1])\not\subset \A$. Let $u=\sup\{t\in [0,1]|\tau(u)\notin \A\}$. Then by the same reasoning as in the proof that "$x+\delta\cap\A=y+\delta$" in the paragraph "Definition of $y_\nu$ and $T_\nu$", $x=\tau(u)\in\A$ One has $\tau(0)\leq x\leq \tau(1)$ (by the same reasoning as in the proof of lemma \ref{lemme distance vectorielle}). 
+Proof: Suppose $\tau([0,1])\not\subset \A$. Let $u=\sup\{t\in [0,1]|\tau(u)\notin \A\}$. Then by the same reasoning as in the proof that "$x+\delta\cap\A=y+\delta$" in the paragraph "Definition of $y_\nu$ and $T_\nu$", $x=\tau(u)\in\A$ One has $\tau(0)\leq x\leq \tau(1)$ (by the same reasoning as in the proof of Lemma \ref{lemme distance vectorielle}). 
 
-By remark~\ref{rque axioms MA3 et MA4 modifiés}, there exist an apartment $A=g^{-1}.\A$ with $g\in G$ containing $\mathfrak{R}=-\infty$ and $germ_x([x,\tau(0)])$. By axiom (MA4) (and remark~\ref{rque axioms MA3 et MA4 modifiés}) applied to $\mathfrak{R}=-\infty$ and to $x$, we can suppose that $g$ fixes $\mathrm{cl}(x,-\infty)\supset x-C_f^v$.  
+By Remark~\ref{rque axioms MA3 et MA4 modifiés}, there exist an apartment $A=g^{-1}.\A$ with $g\in G$ containing $\mathfrak{R}=-\infty$ and $germ_x([x,\tau(0)])$. By axiom (MA4) (and Remark~\ref{rque axioms MA3 et MA4 modifiés}) applied to $\mathfrak{R}=-\infty$ and to $x$, we can suppose that $g$ fixes $\mathrm{cl}(x,-\infty)\supset x-C_f^v$.  
 Let $x'\in [x,\tau(0)]\backslash\{x\}$ such that $[x,x']\subset A$ and $x'\notin \A$. Then $g.x'=\rho_{-\infty}(x')\in x-\R_+\nu\subset x-C_f^v$. Therefore, $x'=g.x'\in \A$, which is absurd. Hence $\tau([0,1])\subset \A$. $\square$
 
 
 
 
 
-\section{Bounding of T and proof of theorem~\ref{thm inclusion} }\label{sect bounding of T}
+\section{Bounding of T and proof of Theorem~\ref{thm inclusion} }\label{sect bounding of T}
 
 
 One defines $h:\begin{aligned} Q^\vee_{\mathbb{R}}& \rightarrow \mathbb{R}\\
@@ -395,11 +412,11 @@ b) if $T>h(\mu)$, there exists $t$ such that $\pi$ is derivable on $(t,1]$ and $
 \end{lemme}
 
 
-Proof : The main idea of b) is to use the fact that during the time when $\pi'(t)\neq T\nu$, $\pi'(t)=T\nu-T\lambda(t)$ with $\lambda(t)\in Q^\vee_+\backslash \{0\}$. Hence for $T$ large, $\pi$ decreases quickly for the $Q^\vee$ order, but it cannot decrease too much because $\mu$ is fixed.
+Proof: The main idea of b) is to use the fact that during the time when $\pi'(t)\neq T\nu$, $\pi'(t)=T\nu-T\lambda(t)$ with $\lambda(t)\in Q^\vee_+\backslash \{0\}$. Hence for $T$ large, $\pi$ decreases quickly for the $Q^\vee$ order, but it cannot decrease too much because $\mu$ is fixed.
 
-Let $t_0=0$, $t_1, \ldots,t_n=1$ a subdivision of $[0,1]$ such that for all $i\in \llbracket 0,n-1\rrbracket $, $\pi_{|(t_i,t_{i+1})}$ is derivable and let $w_i\in W^v$ be such $\pi'_{|(t_i,t_{i+1})}=w_i.T\nu$. If $w_i.\nu=\nu$, one chooses $w_i=1$.
+Let $t_0=0$, $t_1, \ldots,t_n=1$ be a subdivision of $[0,1]$ such that for all $i\in \llbracket 0,n-1\rrbracket $, $\pi_{|(t_i,t_{i+1})}$ is derivable and let $w_i\in W^v$ be such $\pi'_{|(t_i,t_{i+1})}=w_i.T\nu$. If $w_i.\nu=\nu$, one chooses $w_i=1$.
 
-For $i\in \llbracket 0,n-1\rrbracket$, according to lemma 2.4a) of \cite{gaussent2014spherical}, $w_i.\nu =\nu -\lambda_i$, with $\lambda_i \in Q^\vee_+$ and if $w_i\neq 1$, $\lambda_i\neq 0$. One has \[\pi(1)-\pi(0)=T\nu+-\sum_{i=0, w_i\neq 1}^{n-1}(t_{i+1}-t_i)T\lambda_i=T\nu +\mu\]
+For $i\in \llbracket 0,n-1\rrbracket$, according to Lemma 2.4a) of \cite{gaussent2014spherical}, $w_i.\nu =\nu -\lambda_i$, with $\lambda_i \in Q^\vee_+$ and if $w_i\neq 1$, $\lambda_i\neq 0$. One has \[\pi(1)-\pi(0)=T\nu+-\sum_{i=0, w_i\neq 1}^{n-1}(t_{i+1}-t_i)T\lambda_i=T\nu +\mu\]
 
 and one deduces a).
 
@@ -408,12 +425,12 @@ Suppose now $T>h(\mu)$. Let us show that there exists $i\in \llbracket 0,n-1\rrb
 
 For all $i$ such that $w_i\neq 1$, one has $h(\lambda_i)\geq 1$. Hence $T\sum_{i=0, w_i\neq 1}^{n-1}(t_{i+1}-t_i)\leq h(\mu)$, and for $T>h(\mu)$, $\sum_{i=0, w_i\neq 1}^{n-1}(t_{i+1}-t_i)<1=\sum_{i=0}^{n-1}(t_{i+1}-t_i)$ and thus there exists $i\in \llbracket 0,n-1\rrbracket$ such that $w_i=1$.
 
-By remark~\ref{rque chemins de Hecke}, if $w_i=1$ for some $i$, then $w_j=1$ for all $j\geq i$. This shows the existence of $t^*$. We also have $t^*\leq \sum_{i=0, w_i\neq 1}^{n-1}(t_{i+1}-t_i)$ and hence the claimed inequality follows. $\square$
+By Remark~\ref{rque chemins de Hecke}, if $w_i=1$ for some $i$, then $w_j=1$ for all $j\geq i$. This shows the existence of $t^*$. We also have $t^*\leq \sum_{i=0, w_i\neq 1}^{n-1}(t_{i+1}-t_i)$ and hence the claimed inequality follows. $\square$
 
 
 \begin{rque}\label{rque condition sur mu}
 
- Part a) of lemma~\ref{lemme fin des chemins de Hecke longs} shows that for $x\in \mathcal{I}$, $\rho_{-\infty}(x)-\rho_{+\infty}(x)\in \mathbb{R}_+Q^\vee_+$.
+ Part a) of Lemma~\ref{lemme fin des chemins de Hecke longs} shows that for $x\in \mathcal{I}$, $\rho_{-\infty}(x)-\rho_{+\infty}(x)\in \mathbb{R}_+Q^\vee_+$.
 \end{rque}
 
 
@@ -426,13 +443,13 @@ From now on and until the end of this subsection, $\nu$ will be a fixed element 
 \end{cor}
 
 
-Proof :  Let $x\in\mathcal{I}$ such that $\rho_{+\infty}(x)=\rho_{-\infty}(x)$. Let $\nu\in C_f^v$. Let $y=y_\nu(x)$ and $T=T_\nu(x)$ be as in the paragraph "Definition of $y_\nu$ and $T_\nu$". Suppose $x\notin \mathbb{A}$. Then $T>0$. Let $g\in G$ fixing $+\infty$ and such that $x\in g^{-1}.\A$. Let $\tau:[0,1]\rightarrow g^{-1}.\A$ defined by $\tau(t)=g^{-1}.(\rho_{+\infty}(x)+tT\nu)$ for all $t\in [0,1]$. Then $\tau$ is a segment going from $x$ to $y$ and $d^v(x,y)=T\nu$. Therefore, the image $\pi$ of $\tau$ by $\rho_{-\infty}$ of $[x,y]$ is a Hecke path from $\rho_{-\infty}(x)$ to $y=\rho_{+\infty}(x)+T\nu=\rho_{-\infty}(x)+T\nu$, of shape $T\nu$. By lemma \ref{lemme fin des chemins de Hecke longs}, $\pi$ is a segment of $\mathcal{I}$ such that $\pi'=T\nu$. As $\tau(1)=y\in \A$, one can apply lemma \ref{lemme image réciproque de segments} and one gets that $\pi([0,1])\in \mathbb{A}$. This is absurd because we supposed that $x\notin \mathbb{ A}$ and hence $x\in \mathbb{A}$. $\square$
+Proof:  Let $x\in\mathcal{I}$ such that $\rho_{+\infty}(x)=\rho_{-\infty}(x)$. Let $\nu\in C_f^v$. Let $y=y_\nu(x)$ and $T=T_\nu(x)$ be as in the paragraph "Definition of $y_\nu$ and $T_\nu$". Let $g\in G$ fixing $+\infty$ and such that $x\in g^{-1}.\A$. Let $\tau:[0,1]\rightarrow g^{-1}.\A$ defined by $\tau(t)=g^{-1}.(\rho_{+\infty}(x)+tT\nu)$ for all $t\in [0,1]$. Then $\tau$ is a segment going from $x$ to $y$ and $d^v(x,y)=T\nu$. Therefore, the image $\pi$ of $\tau$ by $\rho_{-\infty}$ of $[x,y]$ is a Hecke path from $\rho_{-\infty}(x)$ to $y=\rho_{+\infty}(x)+T\nu=\rho_{-\infty}(x)+T\nu$, of shape $T\nu$. By Lemma \ref{lemme fin des chemins de Hecke longs}, $\pi$ is a segment of $\mathcal{I}$ such that $\pi'=T\nu$. As $\tau(1)=y\in \A$, one can apply Lemma \ref{lemme image réciproque de segments} and one gets that $\tau([0,1])\subset \mathbb{A}$ and hence $x\in \mathbb{A}$. $\square$
 
 \begin{cor}\label{corollaire majoration de T}
-Let $\mu\in Q^\vee_\R$. Then for all $x\in \I$ such that $\rho_{-\infty}(x)-\rho_{+\infty}(x)=\mu$, $T_\nu(x)\leq h(\mu)$, where $T_\nu(x)$ is as defined in the paragraph "Definition of $y_\nu$ and $T_\nu$".
+Let $\mu\in Q^\vee_\R$. Then for all $x\in \I$ such that $\rho_{-\infty}(x)-\rho_{+\infty}(x)=\mu$, $T_\nu(x)\leq h(\mu)$.
 \end{cor}
 
-Proof : Let $y=y_\nu(x)$. Let $\pi$ be the image by $\rho_{-\infty}$ of $[x,y]$. This is a Hecke path from $\rho_{-\infty}(x)$ to $y=\rho_{+\infty}(x)+T\nu$, of shape $T\nu$, with $T=T_\nu(x)$. The minimality of $T$ and lemma \ref{lemme image réciproque de segments} imply that $\pi'(t)\neq \nu$ for all $t\in [0,1]$, where $\pi'$ is derivable. By applying lemma \ref{lemme fin des chemins de Hecke longs}, we deduce that $T\leq h(\mu)$. $\square$
+Proof: Let $y=y_\nu(x)$. Let $\pi$ be the image by $\rho_{-\infty}$ of $[x,y]$. This is a Hecke path from $\rho_{-\infty}(x)$ to $y=\rho_{+\infty}(x)+T\nu$, of shape $T\nu$, with $T=T_\nu(x)$. The minimality of $T$ and Lemma \ref{lemme image réciproque de segments} imply that $\pi'(t)\neq \nu$ for all $t\in [0,1]$, where $\pi$ is derivable. By applying Lemma \ref{lemme fin des chemins de Hecke longs}, we deduce that $T\leq h(\mu)$. $\square$
 
 
 
@@ -441,7 +458,7 @@ Proof : Let $y=y_\nu(x)$. Let $\pi$ be the image by $\rho_{-\infty}$ of $[x,y]$.
 Let $x\in \mathcal{I}$ such that $y_\nu^-(x)\in C^v_f$. Then $0\leq x$ and $\rho_{-\infty}(x)=d^v(0,x)$.
 \end{lemme}
 
-Proof : Let $y^-=y^-_\nu(x)$. Let $A$ be an apartment containing $x$ and $-\infty$. By (MA4) there exists $g\in G$ such that $A=g^{-1}.\A$ and $g$ fixes $\mathrm{cl}(y,-\infty)\supset y-\overline{C_f^v}\ni 0$. Then $g.x-g.y^-=\rho_{-\infty}(x)-y^-=T^-\nu\in C_f^v$ and $g.y-g.0=y$. Thus $g.x-g.0=\rho_{-\infty}(x)\in C_f^v$ and we can conclude by remark~\ref{rque caractérisation distance vectorielle}. $\square$
+Proof: Let $y^-=y^-_\nu(x)$. Let $A$ be an apartment containing $x$ and $-\infty$. By (MA4) there exists $g\in G$ such that $A=g^{-1}.\A$ and $g$ fixes $\mathrm{cl}(y,-\infty)\supset y-\overline{C_f^v}\ni 0$. Then $g.x-g.y^-=\rho_{-\infty}(x)-y^-=T^-\nu\in C_f^v$ and $g.y-g.0=y$. Thus $g.x-g.0=\rho_{-\infty}(x)\in C_f^v$ and we can conclude by Remark~\ref{rque caractérisation distance vectorielle}. $\square$
 
 
 
@@ -450,33 +467,33 @@ Proof : Let $y^-=y^-_\nu(x)$. Let $A$ be an apartment containing $x$ and $-\inft
 Let $\mu\in \A$. Then if $\mu\notin Q_{\R}^\vee$, $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})$ is empty for all $\lambda\in \A$. If $\mu\in Q^\vee_{\R}$, then for $\lambda\in \A$ sufficiently dominant, $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\subset B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\}) $. 
 \end{thm}
 
-Proof : The condition on $\mu$ comes from remark~\ref{rque condition sur mu}. 
+Proof: The condition on $\mu$ comes from Remark~\ref{rque condition sur mu}. 
 
 Suppose $\mu\in Q^\vee_\R$.
-Let $\lambda\in \A$. Let $y^-=y^-_\nu$ and $T^-=T_\nu^-$. By corollary~\ref{corollaire majoration de T}, if $x\in \rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})$, then $y^-(x)\in [\lambda-T^-(x)\nu, \lambda]\subset \lambda-[0,h(\mu)]\nu$. 
-For all $i\in I$, $\alpha_i([0,h(\mu)]\nu)$ is bounded, Consequently $\lambda$ sufficiently dominant, $\alpha_i(\lambda-[0,h(\mu)]\nu)\subset \mathbb{R}^*_+$ for all $i\in I$.  For such a $\lambda$,  $y^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\big)\subset C^v_f$. We conclude the proof with lemma \ref{lemme_rétraction et distance vectorielle}.
+Let $\lambda\in \A$. Let $y^-=y^-_\nu$ and $T^-=T_\nu^-$. By Corollary~\ref{corollaire majoration de T}, if $x\in \rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})$, then $y^-(x)\in [\lambda-T^-(x)\nu, \lambda]\subset \lambda-[0,h(\mu)]\nu$. 
+For all $i\in I$, $\alpha_i([0,h(\mu)]\nu)$ is bounded. Consequently for $\lambda$ sufficiently dominant, $\alpha_i(\lambda-[0,h(\mu)]\nu)\subset \mathbb{R}^*_+$ for all $i\in I$.  For such a $\lambda$,  $y^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\big)\subset C^v_f$. We conclude the proof with Lemma \ref{lemme_rétraction et distance vectorielle}.
  $\square$
 
-\section{Study of "translations" of $\I$ and proof of theorem~\ref{thm invariance des cardinaux}}\label{sect translations}
+\section{Study of "translations" of $\I$ and proof of Theorem~\ref{thm invariance des cardinaux}}\label{sect translations}
 
 Let $\A_{in}=\bigcap_{i\in I} \ker \alpha_i$.
 
-In this subsection we introduce some kinds of "translation" of $\I$ of an inessential vector and show that they have very nice properties. It will be very useful to "generalize theorem from $Y$ to $Y+\A_{in}$" by getting rid of the inessential part. First example of this technique will be corollary~\ref{cor finitude des boules} which generalizes a theorem of \cite{gaussent2014spherical}. Then we study elements of $G$ inducing a translation on $\A$. We show that they commute with $\rho_{+\infty}$ and $\rho_{-\infty}$. We then can see that for fixed $\mu\in\Q^\vee$, the $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap\rho_{-\infty}^{-1}(\{\lambda\})$ for $\lambda\in Y+\A_{in}$ are some translated of  $\big(\rho_{+\infty}^{-1}(\{\mu\})\cap\rho_{-\infty}^{-1}(\{0\})\big)$  which enables to show theorem~\ref{thm invariance des cardinaux} by using theorem~\ref{thm inclusion} and corollary~\ref{cor finitude des boules}.
+In this subsection we introduce some kinds of "translation" of $\I$ of an inessential vector and show that they have very nice properties. It will be very useful to "generalize theorem from $Y$ to $Y+\A_{in}$" by getting rid of the inessential part. First example of this technique will be Corollary~\ref{cor finitude des boules} which generalizes a theorem of \cite{gaussent2014spherical}. Then we study elements of $G$ inducing a translation on $\A$. We show that they commute with $\rho_{+\infty}$ and $\rho_{-\infty}$. We then can see that for fixed $\mu\in\Q^\vee$, the $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap\rho_{-\infty}^{-1}(\{\lambda\})$, for $\lambda\in Y+\A_{in}$, are some translates of  $\big(\rho_{+\infty}^{-1}(\{\mu\})\cap\rho_{-\infty}^{-1}(\{0\})\big)$  which enables to show theorem~\ref{thm invariance des cardinaux} by using Theorem~\ref{thm inclusion} and Corollary~\ref{cor finitude des boules}.
 
 \begin{lemme}\label{lemme partie inessentielle}
  Let $\nu\in\A_{in}$ and $a\in \I$. Then $|B^v(a,\nu)|=1$. Moreover, if $a\in \A$, $B^v(a,\nu)=\{a+\nu\}$. 
 
 \end{lemme} 
 
-Proof : Suppose first $a\in\A$. Let $x\in B^v(a,\nu)$. Let $g\in G$ such that $x,a\in g^{-1}.\A$ and $g.x-g.a=\nu$. Let $\tau:[0,1]\rightarrow \I$ defined by $\tau(t)=g^{-1}.(g.a+(1-t)\nu)$. Then $\pi=\rho_{-\infty}\circ \tau$ is a Hecke path of shape $-\nu$ and in particular,  it is a $-\nu$-path. For all $t$ where $\pi$ is derivable, there exists $w(t)\in W^v$ such that $\pi'(t)=-w(t).\nu=-\nu$. As $W^v$ acts trivially on $\A_{in}$, $\pi'(t)=-\nu$ for all such $t$ and thus $\pi$ is derivable on $[0,1]$ and $\pi'=-\nu$. As $\tau(1)=a\in \A$, one can apply lemma~\ref{lemme image réciproque de segments} and we get that $\tau([0,1])\subset \A$. Therefore, $x\in \A$ and there exists $w\in W^v$ such that $x-a=w.\nu=\nu$.
+Proof: Suppose first $a\in\A$. Let $x\in B^v(a,\nu)$. Let $g\in G$ such that $x,a\in g^{-1}.\A$ and $g.x-g.a=\nu$. Let $\tau:[0,1]\rightarrow \I$ defined by $\tau(t)=g^{-1}.(g.a+(1-t)\nu)$. Then $\pi=\rho_{-\infty}\circ \tau$ is a Hecke path of shape $-\nu$ and in particular,  it is a $-\nu$-path. For all $t$ where $\pi$ is derivable, there exists $w(t)\in W^v$ such that $\pi'(t)=-w(t).\nu=-\nu$. As $W^v$ acts trivially on $\A_{in}$, $\pi'(t)=-\nu$ for all such $t$ and thus $\pi$ is derivable on $[0,1]$ and $\pi'=-\nu$. As $\tau(1)=a\in \A$, one can apply Lemma~\ref{lemme image réciproque de segments} and we get that $\tau([0,1])\subset \A$. Therefore, $x\in \A$ and there exists $w\in W^v$ such that $x-a=w.\nu=\nu$.
 
 \vspace{3mm}
 
-This lemma enables us to define some kinds of translation of a inessential vector. Let $\nu\in \A_{in}$. Let $\tau_\nu:\I\rightarrow \I$ which associates to $x\in \I$ the unique element of $B^v(x,\nu)$. Then we have the following lemma : 
+This lemma enables us to define some kinds of translation of an inessential vector. Let $\nu\in \A_{in}$. Let $\tau_\nu:\I\rightarrow \I$ which associates to $x\in \I$ the unique element of $B^v(x,\nu)$. Then we have the following lemma: 
 
 \begin{lemme}\label{lemme propriétés des translations}
 \begin{enumerate}
-Let $\nu\in \A_{in}$ and $\tau=\tau_\nu$. Then :
+Let $\nu\in \A_{in}$ and $\tau=\tau_\nu$. Then:
 
 \item For all $x\in \A$, $\tau(x)=x+\nu$.\label{item tau restreint à A}
 
@@ -486,19 +503,19 @@ Let $\nu\in \A_{in}$ and $\tau=\tau_\nu$. Then :
 \item The application $\tau$ is a bijection, its inverse being $\tau_{-\nu}$.\label{item bijectivité des translations}
 
 
-\item The application $\tau$ commutes with $\rho_{+\infty}$ and $\rho_{-\infty}$\label{item commutation translation retraction}
+\item The application $\tau$ commutes with $\rho_{+\infty}$ and $\rho_{-\infty}.$\label{item commutation translation retraction}
 
 \item Let $x\in \I$ and $\lambda\in \overline{C_f^v}$, then $\tau(B^v(x,\lambda))=B^v(\tau(x),\lambda)=B^v(x,\lambda+\nu).$\label{item translation d'une boule}
 
 \end{enumerate}
 \end{lemme}
 
-Proof : part~\ref{item tau restreint à A} is a part of lemma~\ref{lemme partie inessentielle}.
+Proof: part~\ref{item tau restreint à A} is a part of Lemma~\ref{lemme partie inessentielle}.
 
 
 Choose $x\in \I$ and $g\in G$. Then $d^v(x,\tau(x))=\nu$ and thus $d^v(g.x,g.\tau(x))=\nu$. Consequently $g.\tau(x)=\tau(g.x)$ by definition of $\tau$. Let $A$ be an apartment containing $x$, $A=h.\A$, with $h\in G$. Then $\tau(x)=\tau(h.a)$ with $a\in \A$, hence $\tau(x)=h.(x+\nu)\in A=h.\A$ and we have~\ref{item commutation de tau}.
 
-Let $x\in\I$, $x=g.a$ with $a\in \A$. By part~\ref{item commutation de tau} applied to $\tau$ and $\tau_{-\nu}$, one has $\tau_{-\nu}(\tau(g.a))=g.\tau_{-\nu}(\tau(a))=g.a$ and thus $\tau_{-\nu}\circ\tau=\Id$. By symmetry, $\tau\circ\tau_{-\nu}=\Id$, which shows~\ref{item bijectivité des translations}.
+Let $x\in\I$, $x=g.a$ with $a\in \A$. By part~\ref{item commutation de tau} applied to $\tau$ and $\tau_{-\nu}$, one has $\tau_{-\nu}(\tau(g.a))=g.\tau_{-\nu}(\tau(a))=g.a$ and thus $\tau_{-\nu}\circ\tau=\Id$. This is enough to show ~\ref{item bijectivité des translations}.
 
 Let $x\in \I$ and $g\in G$ fixing $+\infty$ such that $g.x=\rho_{+\infty}(x)$. 
 Then $\tau(x)\in g^{-1}.\A$, thus $g.\tau(x)=\rho_{+\infty}(\tau(x))$ and by
@@ -513,28 +530,28 @@ One has $g.\tau(u)-g.\tau(x)=(g.u+\nu)-(g.x+\nu)=\lambda$ and thus $\tau(B^v(x,\
  
  
 \begin{cor}\label{cor finitude des boules}
-Let $\lambda\in \A$ and $\mu\in Y+\A_{in}$. Then for all $\lambda_{in}\in \A_{in}$, $\tau_{\lambda_{in}}\big(B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\mu\}\big)=B^v(0,\lambda+\lambda_{in})\cap \rho_{+\infty}^{-1}(\{\mu+\lambda_{in}\})$. In particular, for all $\lambda\in Y+\A_{in}$, $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\mu+\lambda\})$ is finite and is empty if $\mu\notin Q^\vee_-$.
+Let $\lambda\in \A$ and $\mu\in Y+\A_{in}$. Then for all $\lambda_{in}\in \A_{in}$, $\tau_{\lambda_{in}}\big(B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\mu\})\big)=B^v(0,\lambda+\lambda_{in})\cap \rho_{+\infty}^{-1}(\{\mu+\lambda_{in}\})$. In particular, for all $\lambda\in Y+\A_{in}$, $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\mu+\lambda\})$ is finite and is empty if $\mu\notin Q^\vee_-$.
 
 \end{cor}
 
-Proof : The first assertion is a consequence of lemma~\ref{lemme propriétés des translations} part~\ref{item bijectivité des translations}, \ref{item commutation translation retraction} and \ref{item translation d'une boule}.
+Proof: The first assertion is a consequence of Lemma~\ref{lemme propriétés des translations} part~\ref{item bijectivité des translations}, \ref{item commutation translation retraction} and \ref{item translation d'une boule}.
 
 Let $\lambda\in Y+\A_{in}$ and $\lambda_{in}\in \A_{in}$ such that $\tau(\lambda)\in Y$, 
 with $\tau=\tau_{\lambda_{in}}$. Then 
-$\tau\big(B^v(0,\lambda)\cap\rho_{+\infty}^{-1}(\{\lambda+\mu\})\big)=B^v(0,\tau(\lambda))\cap\rho_{+\infty}^{-1}$ $(\{\tau(\lambda+\mu )\})$. Consequently, one can suppose $\lambda\in Y$. 
+$\tau\big(B^v(0,\lambda)\cap\rho_{+\infty}^{-1}(\{\lambda+\mu\})\big)=B^v(0,\tau(\lambda))\cap\rho_{+\infty}^{-1}$ $(\{\tau(\lambda+\mu )\})$. Consequently, one can assume $\lambda\in Y$. 
 
-Suppose $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\mu+\lambda\})$ is nonempty and let $x$ be in this set. Then there exists $g,h\in G$ such that $g.x=\lambda$ and $h.x=\mu+\lambda$. Thus $\lambda+\mu=h.g^{-1}.\lambda\in \I_0\cap \A=Y$ and therefore, $\mu\in Y$. We can now conclude because the finiteness and the condition $\mu$ are shown in \cite{gaussent2014spherical}, part 5 : if $\lambda, \mu\in Y$ then $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\mu\})$ is finite and it is empty if $\mu\notin Q^\vee_-$ (the cardinals of these sets correspond to the $n_\lambda(\nu)$ of this part).
+Suppose $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\mu+\lambda\})$ is nonempty and let $x$ be in this set. Then there exists $g,h\in G$ such that $g.x=\lambda$ and $h.x=\mu+\lambda$. Thus $\lambda+\mu=h.g^{-1}.\lambda\in \I_0\cap \A=Y$ and therefore, $\mu\in Y$. We can now conclude because the finiteness and the condition $\mu$ are shown in \cite{gaussent2014spherical}, Section 5: if $\lambda, \mu\in Y$ then $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\mu\})$ is finite and it is empty if $\mu\notin Q^\vee_-$ (the cardinals of these sets correspond to the $n_\lambda(\nu)$ of loc. cit.).
 $\square$
 
 \vspace{3mm}
 
-We now show a lemma similar to lemma~\ref{lemme propriétés des translations} part~\ref{item commutation translation retraction} for translations of $G$ : 
+We now show a lemma similar to Lemma~\ref{lemme propriétés des translations} part~\ref{item commutation translation retraction} for translations of $G$: 
 
 \begin{lemme}\label{lemme commutation des translations et rétractions}
 Let $n\in G$ inducing a translation on $\A$. Then $n\circ\rho_{+\infty}=\rho_{+\infty}\circ n$ and $n\circ \rho_{-\infty}=\rho_{-\infty}\circ n$.
 \end{lemme}
 
-Proof : 
+Proof: 
 Let $x\in\mathcal{I}$ and $A$ be an apartment containing $x$ and $+\infty$. Then $n.A$ is an apartment containing $+\infty$. Let $\phi:A\rightarrow \mathbb{A}$ an isomorphism fixing $+\infty$. We have $n.x\in n.\mathbb{A}$, and $n\circ\phi\circ n^{-1}:n.A\rightarrow \mathbb{A}$ fixes $+\infty$. Hence $\rho_{+\infty}(n.x)=n\circ\phi\circ n^{-1}(n.x)=n\circ\phi(x)=n\circ\rho_{+\infty}(x)$ and thus $n\circ \rho_{+\infty}=\rho_{+\infty}\circ n$. By the same reasoning applied to $\rho_{-\infty}$, we get the lemma. $\square$
  
  
@@ -544,7 +561,7 @@ Let $x\in\mathcal{I}$ and $A$ be an apartment containing $x$ and $+\infty$. Then
 Let $n\in G$ inducing a translation on $\mathbb{A}$. Let $\lambda_{in}\in \A_{in}$. Set $\tau=\tau_{\lambda_{in}}\circ n$. Let $\nu\in C_f^v$ and $y^-=y_\nu^-$. Then $\tau\circ y^-=y^-\circ \tau$.
 \end{lemme}
 
-Proof : If $x\in \mathbb{A}$, then $y_-(x)=x$, $y_-(\tau(x))=\tau(x)$ and there is nothing to prove. 
+Proof: If $x\in \mathbb{A}$, then $y_-(x)=x$, $y_-(\tau(x))=\tau(x)$ and there is nothing to prove. 
 
 Suppose $x\notin \mathbb{A}$. 
 Then $[x,y^-(x)]\backslash \{y^-(x)\}\subset (x-\R_+\nu)\backslash \mathbb{A}$,
@@ -559,9 +576,9 @@ Let $\mu\in \A$ and $\lambda\in Y+\A_{in}$. One writes $\lambda=\lambda_{in}+\La
 
 \end{thm}
 
-Proof : First assertion is a consequence of lemma~\ref{lemme commutation des translations et rétractions} and lemma~\ref{lemme propriétés des translations} part~\ref{item commutation translation retraction}. Then lemma~\ref{lemme distance vectorielle} b) shows that these sets are empty unless $\mu\in Q^\vee_+$. 
+Proof: First assertion is a consequence of Lemma~\ref{lemme commutation des translations et rétractions} and Lemma~\ref{lemme propriétés des translations} part~\ref{item commutation translation retraction}. Then Lemma~\ref{lemme distance vectorielle} b) shows that these sets are empty unless $\mu\in Q^\vee_+$. 
 
-By theorem~\ref{thm inclusion}, for $\lambda'\in Y$ sufficiently dominant, $\rho_{+\infty}^{-1}(\{\lambda'+\mu\})\cap\rho_{-\infty}^{-1}(\{\lambda'\})\subset B^v(0,\lambda')\cap \rho_{+\infty}^{-1}(\{\lambda'+\mu\})$, which is a finite set by \cite{gaussent2014spherical} part 5 (or by corollary~\ref{cor finitude des boules}). $\square$
+By Theorem~\ref{thm inclusion}, for $\lambda'\in Y$ sufficiently dominant, $\rho_{+\infty}^{-1}(\{\lambda'+\mu\})\cap\rho_{-\infty}^{-1}(\{\lambda'\})\subset B^v(0,\lambda')\cap \rho_{+\infty}^{-1}(\{\lambda'+\mu\})$, which is a finite set by \cite{gaussent2014spherical} part 5 (or by Corollary~\ref{cor finitude des boules}). $\square$
 
 
 
@@ -572,21 +589,21 @@ By theorem~\ref{thm inclusion}, for $\lambda'\in Y$ sufficiently dominant, $\rho
 
 \section{Description of $Y^{++}$}\label{sect Y^++}
 
-In this section we show that $Y^{++}$ is a finitely generated monoid, which will be useful to prove theorem~\ref{thm égalité des ensembles bis}.
+In this section we show that $Y^{++}$ is a finitely generated monoid, which will be useful to prove Theorem~\ref{thm égalité des ensembles bis}.
 
 
 
 Let $l\in \Ne$. Let us define a binary relation $\prec$ on $\N^l$. Let $x,y\in \N^l$,  and $x=(x_1,\ldots,x_l),\ y=(y_1,\ldots,y_l)$ then one says $x\prec y$ if $x\neq y$ 
  for all $i\in \llbracket 1,l\rrbracket$, $x_i\leq y_i$.
 \begin{lemme}\label{lemme ensembles d'incomparables}
-Let $l\in \Ne$ and $F$ be a subset of $\N^l$ satisfying property (INC(l)) : 
+Let $l\in \Ne$ and $F$ be a subset of $\N^l$ satisfying property (INC(l)): 
 
 for all $x,y\in F$, $x$ and $y$ are not comparable for $\prec$. 
 
  Then $F$ is finite.
 \end{lemme}
 
-Proof : this  is clear for $l=1$ because a set $F$ satisfying INC(1) is a singleton or $\emptyset$. 
+Proof: this  is clear for $l=1$ because a set $F$ satisfying INC(1) is a singleton or $\emptyset$. 
 
 Suppose that $l>1$ and that we have proven that all set satisfying INC(l-1) is finite.
 
@@ -595,32 +612,35 @@ Suppose that $l>1$ and that we have proven that all set satisfying INC(l-1) is f
  Set $\tilde{F}=\{\tilde{\lambda_n}|n\in\N\}$. The set $\tilde{F}$ satisfies INC(l-1). By the induction hypothesis, $\tilde{F}$ is finite and thus $F$ is finite, which is absurd. Hence $F$ is finite and the lemma is proven. $\square$
 
 \begin{lemme}\label{lemme description de Y^{++}}
-There exists a finite set $E$ such that $Y^{++}=\sum_{e\in E}\Ne$.
+There exists a finite set $E$ such that $Y^{++}=\sum_{e\in E}\N e$.
 \end{lemme}
 
-Proof : the set $Y_{in}=Y\cap\A_{in}$ is a lattice in the vectorial space it spans. Consequently, it is a finitely generated $\Z$-module and thus a finitely generated monoid. Let $E_1$ a finite set generated $Y_{in}$ as a monoid.
+Proof: the set $Y_{in}=Y\cap\A_{in}$ is a lattice in the vectorial space it spans. Consequently, it is a finitely generated $\Z$-module and thus a finitely generated monoid. Let $E_1$ be a finite set generating $Y_{in}$ as a monoid.
 
  Let $Y_{\succ 0}=Y^{++}\backslash Y_{in}$. Let $\mathcal{P}=\{a\in Y_{\succ 0}|a\neq b+c\ \forall b,c\in Y_{\succ 0}\}$. Let $\alpha:Y^{++}\rightarrow \N^{I}$ such that 
  $\alpha(x)=(\alpha_i(x))_{i\in I}$ for all $x\in Y^{++}$. Let $a,b\in \mathcal{P}$.
   If $\alpha(a)\prec \alpha(b)$, then $b=b-a+a$, with $a,b-a\in \mathcal{P}$, which is absurd and by symmetry we deduce that $\alpha(a)$ and $\alpha(b)$ are not comparable for $\prec$. 
-Therefore, by lemme~\ref{lemme ensembles d'incomparables}, $\alpha(\mathcal{P})$ is finite. Let $E_2$ be a finite set of $Y_{\succ 0}$ such that $\alpha(\mathcal{P})=\{\alpha(x)|x\in E\}$. Then $Y^{++}=\sum_{e\in E_2}\Ne+Y_{in}=\sum{e\in E}\N e$, where $E=E_1\cup E_2$. $\square$
+Therefore, by lemme~\ref{lemme ensembles d'incomparables}, $\alpha(\mathcal{P})$ is finite. Let $E_2$ be a finite set of $Y_{\succ 0}$ such that $\alpha(\mathcal{P})=\{\alpha(x)|x\in E_2\}$. Then $Y^{++}=\sum_{e\in E_2}\N e+Y_{in}=\sum_{e\in E}\N e$, where $E=E_1\cup E_2$. $\square$
 
  
 
-\section{Proof of theorem~\ref{thm égalité des ensembles bis}}\label{sect proof of final theorem}
+\section{Proof of Theorem~\ref{thm égalité des ensembles bis}}\label{sect proof of final theorem}
+Recall that we want to prove Theorem~\ref{thm égalité des ensembles bis}: 
 
-The basic idea of the proof of theorem~\ref{thm égalité des ensembles bis}, is that if $\mu\in Q^\vee$ there exist a finite set $F\subset Y^{++}$ such that for all $\lambda\in Y^{++}+\A_{in}$, $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(0,\lambda) \subset \bigcup_{f\in F|\lambda-f\in\overline{C^v_f}} \rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(\lambda-f,f)$ (this is lemma~\ref{lemme majoration du cardinal des boules}, which generalizes lemma~\ref{lemme distance finie à l'appartement} and uses section~\ref{sect Y^++}). Then we use section~\ref{sect translations} to show  that $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(\lambda-f,f)$ is the image of $\rho_{+\infty}^{-1}(\mu+f)\cap B^v(0,f)$ by a "translation" $\tau_{\lambda-f}$ of $G$ of vector $\lambda-f$ (which means that $\tau_{\lambda-f}$ induces the translation of vector $\lambda-f$ on $\mathbb{A}$). We fix $\nu\in C_f^v$ and set $y^-=y_\nu^-$. By lemma~\ref{lemme y- des translatés},  \[y^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(0,\lambda)\big)\subset\bigcup_{f\in F}\tau_{\lambda-f}\circ y^-\big(B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\})\big).\] According to part 5 of \cite{gaussent2014spherical}, for all $f, \mu \in Y$, $B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\})$ is finite. Consequently, for $\lambda$ sufficiently dominant, $\bigcup_{f\in F}\tau_{\lambda-f}\big(y_-(B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\}\big)\subset C^v_f$  and one conclude by using lemma~\ref{lemme_rétraction et distance vectorielle}. 
+ Let $\mu\in Q^\vee$. Then for $\lambda\in Y^{++}+\A_{in}$ sufficiently dominant, $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})=\rho_{-\infty}^{-1}(\{\lambda\})\cap\rho_{+\infty}^{-1}(\{\lambda+\mu\})$.
+
+The basic idea of the proof of this theorem, is that if $\mu\in Q^\vee$ there exist a finite set $F\subset Y^{++}$ such that for all $\lambda\in Y^{++}+\A_{in}$, $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(0,\lambda) \subset \bigcup_{f\in F|\lambda-f\in\overline{C^v_f}} \rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(\lambda-f,f)$ (this is Corollary~\ref{lemme majoration du cardinal des boules}, which generalizes Lemma~\ref{lemme distance finie à l'appartement} and uses section~\ref{sect Y^++}). Then we use section~\ref{sect translations} to show  that $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(\lambda-f,f)$ is the image of $\rho_{+\infty}^{-1}(\mu+f)\cap B^v(0,f)$ by a "translation" $\tau_{\lambda-f}$ of $G$ of vector $\lambda-f$ (which means that $\tau_{\lambda-f}$ induces the translation of vector $\lambda-f$ on $\mathbb{A}$). We fix $\nu\in C_f^v$ and set $y^-=y_\nu^-$. By Lemma~\ref{lemme y- des translatés},  \[y^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(0,\lambda)\big)\subset\bigcup_{f\in F}\tau_{\lambda-f}\circ y^-\big(B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\})\big).\] According to part 5 of \cite{gaussent2014spherical}, for all $f, \mu \in Y$, $B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\})$ is finite. Consequently, for $\lambda$ sufficiently dominant, $\bigcup_{f\in F}\tau_{\lambda-f}\big(y_-(B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\}\big)\subset C^v_f$  and one conclude by using Lemma~\ref{lemme_rétraction et distance vectorielle}. 
  
 
 
 
 \begin{lemme}\label{lemme distance finie à l'appartement}
-Let $\mu\in Q^\vee_-$ and $H=-h(\mu)+1\in \N$. Let $x\in \mathcal{I}$ and $a\in Y$ such that $d^v(a,x)=T\nu$, with $T\geq H$ and $\rho_{+\infty}(x)=a+T\nu +\mu$. Let $g\in G$ such that $g.a=a$ and $g.x=T\lambda+a$. Then $g$ fixes $[a,a+(T-H)\nu]$ and in particular $x\in B^v(a+(T-H)\nu,H\nu)$.
+Let $\mu\in Q^\vee_-$ and $H=-h(\mu)+1\in \N$. Let $a\in Y$, $T\in [H,+\infty)$, $\nu\in Y^{++}$ and $x\in B^v(a,T\nu)\cap\rho_{+\infty}^{-1}(\{a+T\nu+\mu\})$. Let $g\in G$ such that $g.a=a$ and $g.x=T\lambda+a$. Then $g$ fixes $[a,a+(T-H)\nu]$ and in particular $x\in B^v(a+(T-H)\nu,H\nu)$.
 \end{lemme}
 
-Proof : Let $\tau:[0,1]\rightarrow \mathbb{A}$ defined by $\tau(t)=a+(1-t)T\nu$. The main idea is to apply lemma \ref{lemme fin des chemins de Hecke longs} to $\rho_{+\infty}\circ (g^{-1}.\tau)$ but we cannot do it directly because $\rho_{+\infty}(\tau)$ is not a Hecke path with respect to $-C^v_f$. Let $\mathbb{A}'$ be the vectorial space $\mathbb{A}$ equipped with a structure of apartment of $-\mathbb{A}$: the fundamental chamber of $\mathbb{A}'$ is $C^{v,}_f=-C^v_f$ etc ... Let $\mathcal{I}'$ be the set $\mathcal{I}$, whose apartments are the $-A$ where $A$ runs over the apartment of $\mathbb{A}$. Then $\mathcal{I}'$ is a hovel of standard apartment $\mathbb{A}'$. We have $0\leq x$ in $\mathcal{I}$ and so $x\leq'0$ in $\mathcal{I}'$. 
+Proof: Let $\tau:[0,1]\rightarrow \mathbb{A}$ defined by $\tau(t)=a+(1-t)T\nu$. The main idea is to apply Lemma \ref{lemme fin des chemins de Hecke longs} to $\rho_{+\infty}\circ (g^{-1}.\tau)$ but we cannot do it directly because $\rho_{+\infty}\circ\tau$ is not a Hecke path with respect to $-C^v_f$. Let $\mathbb{A}'$ be the vectorial space $\mathbb{A}$ equipped with a structure of apartment of $-\mathbb{A}$: the fundamental chamber of $\mathbb{A}'$ is $C^{v,}_f=-C^v_f$ etc ... Let $\mathcal{I}'$ be the set $\mathcal{I}$, whose apartments are the $-A$ where $A$ runs over the apartment of $\I$. Then $\mathcal{I}'$ is a hovel of standard apartment $\mathbb{A}'$. We have $0\leq x$ in $\mathcal{I}$ and so $x\leq'0$ in $\mathcal{I}'$. 
  
-Then the image $\pi$ of $g^{-1}.\tau$ by $\rho_{+\infty}$ is a Hecke path of shape $-T\nu$ from $\rho_{+\infty}(x)=a+T\nu +\mu$ to $a$. By lemma~\ref{lemme fin des chemins de Hecke longs} (for $\I'$), for $t>-h(\mu)/T$, $\pi'(t)=-T\nu$, and thus lemma~\ref{lemme image réciproque de segments} implies $\rho_{+\infty}(g^{-1}.\tau(t))=g^{-1}.\tau(t)$ for all $t>-h(\mu)/T$. Therefore, $g^{-1}.\tau_{|(-h(\mu)/T,1]}$ is a segment in $\A$ ending in $a$, with derivative $-T\nu$ and thus, for all $t\in (\frac{-h(\mu)}{T},1]$, $g^{-1}.\tau(t)=\tau(t)$.
+Then the image $\pi$ of $g^{-1}.\tau$ by $\rho_{+\infty}$ is a Hecke path of shape $-T\nu$ from $\rho_{+\infty}(x)=a+T\nu +\mu$ to $a$. By Lemma~\ref{lemme fin des chemins de Hecke longs} (for $\I'$), for $t>-h(\mu)/T$, $\pi'(t)=-T\nu$, and thus Lemma~\ref{lemme image réciproque de segments} (for $\I'$ and $\A'$) implies $\rho_{+\infty}(g^{-1}.\tau(t))=g^{-1}.\tau(t)$ for all $t>-h(\mu)/T$. Therefore, $g^{-1}.\tau_{|(-h(\mu)/T,1]}$ is a segment in $\A$ ending in $a$, with derivative $-T\nu$ and thus, for all $t\in (\frac{-h(\mu)}{T},1]$, $g^{-1}.\tau(t)=\tau(t)$.
  In particular, $g$ fixes $[a,\tau(\frac{H}{T})]=[a,a+(T-H)\nu]$, and $d^v(a+(T-H)\nu,x)=d^v(g^{-1}.(a+(T-H)\nu),g^{-1}.x)=d^v(a+(T-H)\nu,a+T\nu)=H\nu$. $\square$
 
 
@@ -635,24 +655,24 @@ Then the image $\pi$ of $g^{-1}.\tau$ by $\rho_{+\infty}$ is a Hecke path of sha
 
 \vspace{5mm}
 
-Let $E$ be as in the lemma~\ref{lemme description de Y^{++}}. 
+Let $E$ be as in the Lemma~\ref{lemme description de Y^{++}}. 
  
  
 \begin{lemme}\label{lemme distance finie à l'appartement bis}
 Let $\mu\in Q^\vee_-$, $H=-h(\mu)+1\in \N$ and $a\in Y$. Let $\lambda\in Y^{++}$. One writes $\lambda=\sum_{e\in E}\lambda_e e$ with $\lambda_e\in\N$ for all $e\in E$. Let $e\in E$. Then if $\lambda_e\geq H$, $B^v(a,\lambda)\cap\rho_{+\infty}^{-1}(\{a+\lambda+\mu\})\subset B^v(a+(\lambda_e -H)e,\lambda-(\lambda_e-H)e)$. 
 \end{lemme} 
 
-Proof : Let $x\in B^v(a,\lambda)\cap\rho_{+\infty}^{-1}(\{a+\lambda+\mu\})$ and $g\in G$ fixing $a$ such that $g.x=a+\lambda$.  Let $z=g^{-1}(a+\lambda_e e)$.
+Proof: Let $x\in B^v(a,\lambda)\cap\rho_{+\infty}^{-1}(\{a+\lambda+\mu\})$ and $g\in G$ fixing $a$ such that $g.x=a+\lambda$.  Let $z=g^{-1}(a+\lambda_e e)$.
 
 Then one has $d^v(a,z)=\lambda_e e$ and $d^v(z,x)=\lambda-\lambda_e e$.
 
-According to lemma 2.4.b) of \cite{gaussent2014spherical} (adapted because one considers Hecke paths with respect to $C^v_f$), one has : 
+According to Lemma 2.4.b) of \cite{gaussent2014spherical} (adapted because one considers Hecke paths with respect to $C^v_f$), one has: 
 
 $\rho_{+\infty}(z)-a\leq_{Q^\vee} d^v(a,z)=\lambda_e e$ and $\rho_{+\infty}(x)-\rho_{+\infty}(z)\leq_{Q^\vee} d^v(z,x)=\lambda-\lambda_e e$.
 
 Therefore, \[a+\lambda+\mu=\rho_{+\infty}(x)\leq_{Q^\vee} \rho_{+\infty}(z)+\lambda-\lambda_e e\leq_{Q^\vee}a+\lambda.\]
 
-Hence, $\rho_{+\infty}(z)=a+\lambda_e e+\mu'$, with $\mu\leq_{Q^\vee}\mu'\leq_{Q^\vee}0$. One has $-h(\mu')+1\leq H$. By lemma~\ref{lemme distance finie à l'appartement}, $g$ fixes $[a,a+(\lambda_e-H)e]$ and thus $g$ fixes $a+(\lambda_e-H)e$. 
+Hence, $\rho_{+\infty}(z)=a+\lambda_e e+\mu'$, with $\mu\leq_{Q^\vee}\mu'\leq_{Q^\vee}0$. One has $-h(\mu')+1\leq H$. By Lemma~\ref{lemme distance finie à l'appartement}, $g$ fixes $[a,a+(\lambda_e-H)e]$ and thus $g$ fixes $a+(\lambda_e-H)e$. 
 
 As $d^v(g^{-1}.(a+(\lambda_e-H)e),x)=\lambda-(\lambda_e-H)e$, $x\in B^v(a+(\lambda_e -H)e,\lambda-(\lambda_e-H)e)$. $\square$
  
@@ -662,7 +682,7 @@ As $d^v(g^{-1}.(a+(\lambda_e-H)e),x)=\lambda-(\lambda_e-H)e$, $x\in B^v(a+(\lamb
  Let $\mu \in Q^\vee_-$. Let $H=-h(\mu)+1$. Let $\lambda\in Y^{++}$. We fix a writing  $\lambda=\sum_{e\in E}\lambda_e e$, with $\lambda_e\in \N$ for all $e\in E$. Let $J=\{e\in E | \lambda_e \geq H\}$. Then $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})\subset B^v(\lambda-H\sum_{e\in J} e-\sum_{e\notin J}\lambda_e e, H\sum_{e\in J}e+\sum_{e\notin J}\lambda_ e)$. 
 \end{cor}
  
-Proof : this is a generalization by induction of Lemma~\ref{lemme distance finie à l'appartement bis}.
+Proof: this is a generalization by induction of Lemma~\ref{lemme distance finie à l'appartement bis}.
 
 
     
@@ -671,17 +691,17 @@ Proof : this is a generalization by induction of Lemma~\ref{lemme distance finie
  \end{thm}
  
  
-Proof : Theorem \ref{thm inclusion} yields one inclusion. It remains to show that $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(0,\lambda)\subset\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})$ 
+Proof: Theorem \ref{thm inclusion} yields one inclusion. It remains to show that $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(0,\lambda)\subset\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})$ 
 for $\lambda$ sufficiently dominant.
 
 \vspace{3mm}
 Let $H=-h(\mu)+1$ and $F=\{\sum_{e\in E}\nu_e e|(\nu_e)\in \llbracket 0,H-1\rrbracket^E\}$. This set is finite. Let $\lambda\in Y^{++}+\A_{in}$, $\lambda=\lambda_{in}+\Lambda$, with $\lambda_{in}\in \A_{in}$ and $\Lambda\in Y^{++}$.
 
-Let $x\in B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})$. Then by lemma~\ref{lemme majoration du cardinal des boules}, there exists $f\in F$ such that $\lambda-f\in \overline{C^v_f}$ and $x\in B^v(\lambda-f,f)$. Let $n$ an element of $G$ inducing the translation of vector $\Lambda-f=\lambda-\lambda_{in}+f$ on $\A$ and $\tau_{\lambda,f}=\tau_{\lambda_{in}}\circ n$. Then $x\in\tau_{\lambda,f}(B_f)$ where $B_f=B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\})$.
+Let $x\in B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})$. Then by Lemma~\ref{lemme majoration du cardinal des boules}, there exists $f\in F$ such that $\lambda-f\in \overline{C^v_f}$ and $x\in B^v(\lambda-f,f)$. Let $n$ an element of $G$ inducing the translation of vector $\Lambda-f=\lambda-\lambda_{in}+f$ on $\A$ and $\tau_{\lambda,f}=\tau_{\lambda_{in}}\circ n$. Then $x\in\tau_{\lambda,f}(B_f)$ where $B_f=B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\})$.
 
 Let $B=\bigcup_{f\in F}B_f$. Then one has proven that \[B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})\subset \bigcup_{f\in F}\tau_{\lambda,f}(B).\]
 
-By part 5 of \cite{gaussent2014spherical} (or corollary~\ref{cor finitude des boules}), $B_f$ is finite for all $f\in F$ and thus $B=\bigcup_{f\in F}B_f$ is finite.  Let $\nu\in C_f^v$ and $y^-=y_\nu^-$. Then $y^-(B)$ is finite and for $\lambda$ sufficiently dominant, $\bigcup_{f\in F}\tau_{\lambda,f}\circ y^-(B) \subset{C^v_f}$. Moreover, according to lemma~\ref{lemme y- des translatés}, $\bigcup_{f\in F}\tau_{\lambda,f}\circ y^-(B)=\bigcup_{f\in F}y^-\circ \tau_{\lambda,f}(B)$. Hence \[y^-\big(B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})\big)\subset C^v_f\] for $\lambda$ sufficiently dominant. Eventually one concludes with lemma~\ref{lemme_rétraction et distance vectorielle}. $\square$
+By part 5 of \cite{gaussent2014spherical} (or Corollary~\ref{cor finitude des boules}), $B_f$ is finite for all $f\in F$ and thus $B=\bigcup_{f\in F}B_f$ is finite.  Let $\nu\in C_f^v$ and $y^-=y_\nu^-$. Then $y^-(B)$ is finite and for $\lambda$ sufficiently dominant, $\bigcup_{f\in F}\tau_{\lambda,f}\circ y^-(B) \subset{C^v_f}$. Moreover, according to Lemma~\ref{lemme y- des translatés}, $\bigcup_{f\in F}\tau_{\lambda,f}\circ y^-(B)=\bigcup_{f\in F}y^-\circ \tau_{\lambda,f}(B)$. Hence \[y^-\big(B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})\big)\subset C^v_f\] for $\lambda$ sufficiently dominant. Eventually one concludes with Lemma~\ref{lemme_rétraction et distance vectorielle}. $\square$
 
 
 
