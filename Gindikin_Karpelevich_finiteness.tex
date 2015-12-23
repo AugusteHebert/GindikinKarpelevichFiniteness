@@ -29,7 +29,7 @@
 
 
 \theoremstyle{definition}
-\newtheorem{defn}[thm]{Définition}
+\newtheorem{defn}[thm]{Definition}
 \newtheorem{defn/prop}[thm]{Définition/Proposition}
 \newtheorem{defn/thm}[thm]{Définition/Théorème}
 \newtheorem{conj}[thm]{Conjecture}
@@ -63,12 +63,12 @@
 
 
 \begin{abstract}
-In this paper, we give a proof of certain finiteness results about split Kac-Moody groups over a local non-archimedian field. Our results generalize those of "An affine Gindikin-Karpelevich" formula of A.Braverman, H.Garland, D.Kazhdan and M.Patnaik. We do not require our groups to be affine. We use the hovel $\I$ associated to this situation, which is the analogue of the Bruhat-Tits building for a reductive group.
+In this paper, we give a proof of certain finiteness results about split Kac-Moody groups over a local non-archimedian field. Our results generalize those of "An affine Gindikin-Karpelevich formula" of Alexander Braverman, Howard Garland, David Kazhdan and Manish Patnaik. We do not require our groups to be affine. We use the hovel $\I$ associated to this situation, which is the analogue of the Bruhat-Tits building for a reductive group.
 \end{abstract}
 
 \section{Introduction}
 
-Let $\mathcal{G}$ a split Kac-Moody group over an ultrametric field. By \cite{gaussent2008kac} and \cite{rousseau2012almost} one can associate a hovel $\I$ to $\mathcal{G}$. This is some kind of generalization of Bruhat-Tits buildings for reductive groups. Studying $\I$ enables to get information on $\mathcal{G}$. In general, $\I$ is not a building : there may be two points such that no apartment of $\I$ contains these two points. However some properties of euclidian buildings remain, for example one can still define retraction onto an apartment centred at a sector-germ.
+Let $\mathcal{G}$ a split Kac-Moody group over an ultrametric field. By \cite{gaussent2008kac} and \cite{rousseau2012almost} one can associate a hovel $\I$ to $\mathcal{G}$. This is some kind of generalization of Bruhat-Tits buildings for reductive groups. Studying $\I$ enables to get information on $\mathcal{G}$. In general, $\I$ is not a building: there may be two points such that no apartment of $\I$ contains these two points. However some properties of euclidian buildings remain, for example one can still define retraction onto an apartment centred at a sector-germ.
 
 
 Let $(C,X,Y,(\alpha_i)_{i\in I},(\alpha_i^\vee)_{i\in I})$ be a generating root system associated to $\mathcal{G}$.  Let $\A=Y\otimes \R$. We will call $\A$ the standard apartment of $\I$. The hovel is a set covered with vectorial spaces isomorphic to $\A$ analogously to euclidean buildings. 
@@ -102,7 +102,7 @@ These theorems generalize theorem 1.9 of \cite{braverman2014affine} because we d
 \vspace{3mm}
 
 
-The main tools used to show them are Hecke paths, which are defined and used in \cite{gaussent2008kac} part 5 and \cite{gaussent2014spherical} part 1.8 and which correspond to the image of segments of $\mathcal{I}$ by retractions centred at $\pm\infty$, and results of \cite{gaussent2014spherical}.
+The main tools used to show them are Hecke paths and results of \cite{gaussent2014spherical}. Hecke paths were defined by Misha Kapovich, Bernhard Leeb and John J.Millson in \cite{kapovich2002generalized}. They are used in \cite{gaussent2008kac} part 5 and \cite{gaussent2014spherical} part 1.8 and they correspond to the image of segments of $\mathcal{I}$ by retractions centred at $\pm\infty$.
 
 In section~\ref{sect general frameworks} we set the general frameworks and the notation and we define hovels.
 
@@ -118,7 +118,7 @@ In section~\ref{sect general frameworks} we set the general frameworks and the n
 
 \vspace{3mm}
 
-I thank Stéphane Gaussent for suggesting me this problem and for helping me in finding a solution.
+I thank Stéphane Gaussent for suggesting me this problem and for helping me improving the manuscript.
 
 
 \section{General frameworks}\label{sect general frameworks}
@@ -168,9 +168,9 @@ We define a $W^v$ invariant relation $\leq$ on $V$ by: $\forall (x,y)\in V\mathr
 
 \subsection{Filters}
 
-\begin{defin}
+\begin{defn}
 A filter in a set $E$ is a nonempty set $F$ of nonempty subsets of $E$ such that, if $S$, $S'\in F$ then $S\cap S'\in F$ and, if $S'\subset S$, with $S\in F$ then $S'\in F$.
-\end{defin}
+\end{defn}
 
 If $F$ is a filter in a set $E$, and $E'$ is a subset of $E$, one says that $F$ contains $E'$ if every element of $F$ contains $E'$. If $E'$ is nonempty, the set $F_{E'}$ of subsets of $E$ containing $E'$ is a filter. By abuse of language, we will sometimes say that $E'$ is a filter by identifying $F_{E'}$ and $E'$. If $F$ is a filter in $E$, its closure $\overline F$ (resp. its convex envelope) is the filter of subsets of $E$ containing the closure (resp. the convex envelope) of some element of $F$.
 
@@ -226,7 +226,7 @@ A \textit{face} $F$ in $V$ is a filter associated to a point $x\in V\mathrm{}$ a
 
 There is an order on the faces: if $F\subset \overline{F'}$ we say that "$F$ is a face of $F'$" or "$F'$ contains $F$". The dimension of a face $F$ is the smallest dimension of an affine space generated by some $S\in F$. Such an affine space is unique and is called its support. A face is said to be \textit{spherical} if the direction of its support meets the open Tits cone $\mathring \T$ or its opposite $-\mathring \T$; then its pointwise stabilizer $W_F$ in $W^v$ is finite.
 
-We have $W^a\subset P^\vee \rtimes W^v$. As $\alpha(P^\vee)\subset \Z$ for all $\alpha$ in $\sum_{i\in I}\Z \alpha_i$, if $\tau$ is a translation of $V$ of a vector $p\in P^\vee$, then for all $\alpha\in \Q$ $\tau$ permutes the sets of the shape $D(\alpha,k)$ where $k$ runs over $\Z$. As $W^v$ stabilizes $\Delta$, any element of $W^v$ permutes the sets of the shape $D(\alpha,k)$ where $\alpha$ runs over $\Delta$. Therefore, $W^a$ permutes the sets $D(\alpha,k)$, where $(\alpha,k)$ runs over $\Delta\times \Z$ and thus $W^a$ permutes the enclosures, faces, chimneys, ... of $V$.
+We have $W^a\subset P^\vee \rtimes W^v$. As $\alpha(P^\vee)\subset \Z$ for all $\alpha$ in $\sum_{i\in I}\Z \alpha_i$, if $\tau$ is a translation of $V$ of a vector $p\in P^\vee$, then for all $\alpha\in Q$, $\tau$ permutes the sets of the shape $D(\alpha,k)$ where $k$ runs over $\Z$. As $W^v$ stabilizes $\Delta$, any element of $W^v$ permutes the sets of the shape $D(\alpha,k)$ where $\alpha$ runs over $\Delta$. Therefore, $W^a$ permutes the sets $D(\alpha,k)$, where $(\alpha,k)$ runs over $\Delta\times \Z$ and thus $W^a$ permutes the enclosures, faces, chimneys, ... of $V$.
 
 A \textit{chamber} (or alcove) is a maximal face, or equivalently, a face such that all its elements contains a nonempty open subset of $V$.
 
@@ -346,7 +346,7 @@ This lemma is analogous to Proposition 4.7 1) of \cite{rousseau2011masures}. The
 \paragraph{Definition of $y_\nu$ and $T_\nu$ (resp. $y^-_\nu$ and $T^-_\nu$)}
 Let $x\in \mathcal{I}$. Let $\nu \in C_f^v$ and $\delta=\R_+\nu$, which is a generic ray. According to axiom (MA3) applied to a face containing $x$ and the splayed chimney $C^v_f$, there exists an apartment $A$ containing $x$ and $+\infty$. Then $A$ contains $x+\delta$. Then $x+\delta\cap \A$ is nonempty. Let $z\in x+\delta\cap \A$. Then $A\cap \A$ contains $z$, $+\infty$ and by (MA4), $A\cap\A$ contains $\mathrm{cl}(z,+\infty)\supset z+\overline{C_f^v}$. Consequently, $A\cap\A \supset z+\delta$ and thus $x+\delta\cap \A=y+\delta$ or $x+\delta\cap \A=y+\mathring{\delta}$, where $\mathring \delta=\R^*_+\nu$ for some $y\in x+\delta$.
 
- Suppose $x+\delta\cap \A=y+\mathring{\delta}$. Let $z\in y+\mathring{\delta}$. Then by (MA2) applied to $germ_y([y,z]\backslash\{y\})$, $\A\cap A\supset \mathrm{cl}(germ_y([y,z]\backslash\{y\}))\ni y$ because $\mathrm{cl}(germ_y([y,z]\backslash\{y\}))$ contains the closure of $germ_y([y,z]\backslash\{y\})$. This is absurd and thus $\A\cap x+\delta=y+\delta$, with $y\in \A$. Ones sets $y_\nu(x)=y\in\A$ (actually, $y_\nu$ only depends on $\delta$).
+ Suppose $x+\delta\cap \A=y+\mathring{\delta}$. Let $z\in y+\mathring{\delta}$. Then by (MA2) applied to $germ_y([y,z]\backslash\{y\})$, $\A\cap A\supset \mathrm{cl}(germ_y([y,z]\backslash\{y\}))\ni y$ because $\mathrm{cl}(germ_y([y,z]\backslash\{y\}))$ contains the closure of $germ_y([y,z]\backslash\{y\})$. This is absurd and thus $\A\cap x+\delta=y+\delta$, with $y\in \A$. One sets $y_\nu(x)=y\in\A$ (actually, $y_\nu$ only depends on $\delta$).
 
 One has $\rho_{+\infty}(x+\delta)=\rho_{+\infty}(x)+\delta$ and $y\in \rho_{+\infty}(x)+\delta$. We define $T_\nu(x)$ as the unique element $T$ of $\mathbb{R}_+$ such that $y=\rho_{+\infty}(x)+T\nu$.
 
@@ -383,7 +383,7 @@ According to paragraph 2.3 of \cite{gaussent2014spherical}, the image $\pi$ of $
 Let $\tau:[0,1]\rightarrow \mathcal{I}$ a segment of $\mathcal{I}$ such that $\tau(1)\in \mathbb{A}$ and $\rho_{-\infty}\circ\tau$ is a segment of $\mathbb{A}$ satisfying  $(\rho_{-\infty}\circ\tau)'=\nu\in \overline{C^v_f}$. Then $\tau([0,1])\subset \mathbb{A}$ and thus $\rho_{-\infty}\circ \tau=\tau$.
 \end{lemme}
 
-Proof: Suppose $\tau([0,1])\not\subset \A$. Let $u=\sup\{t\in [0,1]|\tau(u)\notin \A\}$. Then by the same reasoning as in the proof that "$x+\delta\cap\A=y+\delta$" in the paragraph "Definition of $y_\nu$ and $T_\nu$", $x=\tau(u)\in\A$ One has $\tau(0)\leq x\leq \tau(1)$ (by the same reasoning as in the proof of Lemma \ref{lemme distance vectorielle}). 
+Proof: Suppose $\tau([0,1])\not\subset \A$. Let $u=\sup\{t\in [0,1]|\tau(u)\notin \A\}$. Then by the same reasoning as in the proof that "$x+\delta\cap\A=y+\delta$" in the paragraph "Definition of $y_\nu$ and $T_\nu$", $x=\tau(u)\in\A$. One has $\tau(0)\leq x\leq \tau(1)$ (by the same reasoning as in the proof of Lemma \ref{lemme distance vectorielle}). 
 
 By Remark~\ref{rque axioms MA3 et MA4 modifiés}, there exist an apartment $A=g^{-1}.\A$ with $g\in G$ containing $\mathfrak{R}=-\infty$ and $germ_x([x,\tau(0)])$. By axiom (MA4) (and Remark~\ref{rque axioms MA3 et MA4 modifiés}) applied to $\mathfrak{R}=-\infty$ and to $x$, we can suppose that $g$ fixes $\mathrm{cl}(x,-\infty)\supset x-C_f^v$.  
 Let $x'\in [x,\tau(0)]\backslash\{x\}$ such that $[x,x']\subset A$ and $x'\notin \A$. Then $g.x'=\rho_{-\infty}(x')\in x-\R_+\nu\subset x-C_f^v$. Therefore, $x'=g.x'\in \A$, which is absurd. Hence $\tau([0,1])\subset \A$. $\square$
@@ -629,7 +629,7 @@ Recall that we want to prove Theorem~\ref{thm égalité des ensembles bis}:
 
  Let $\mu\in Q^\vee$. Then for $\lambda\in Y^{++}+\A_{in}$ sufficiently dominant, $B^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})=\rho_{-\infty}^{-1}(\{\lambda\})\cap\rho_{+\infty}^{-1}(\{\lambda+\mu\})$.
 
-The basic idea of the proof of this theorem, is that if $\mu\in Q^\vee$ there exist a finite set $F\subset Y^{++}$ such that for all $\lambda\in Y^{++}+\A_{in}$, $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(0,\lambda) \subset \bigcup_{f\in F|\lambda-f\in\overline{C^v_f}} \rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(\lambda-f,f)$ (this is Corollary~\ref{lemme majoration du cardinal des boules}, which generalizes Lemma~\ref{lemme distance finie à l'appartement} and uses section~\ref{sect Y^++}). Then we use section~\ref{sect translations} to show  that $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(\lambda-f,f)$ is the image of $\rho_{+\infty}^{-1}(\mu+f)\cap B^v(0,f)$ by a "translation" $\tau_{\lambda-f}$ of $G$ of vector $\lambda-f$ (which means that $\tau_{\lambda-f}$ induces the translation of vector $\lambda-f$ on $\mathbb{A}$). We fix $\nu\in C_f^v$ and set $y^-=y_\nu^-$. By Lemma~\ref{lemme y- des translatés},  \[y^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(0,\lambda)\big)\subset\bigcup_{f\in F}\tau_{\lambda-f}\circ y^-\big(B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\})\big).\] According to part 5 of \cite{gaussent2014spherical}, for all $f, \mu \in Y$, $B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\})$ is finite. Consequently, for $\lambda$ sufficiently dominant, $\bigcup_{f\in F}\tau_{\lambda-f}\big(y_-(B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\}\big)\subset C^v_f$  and one conclude by using Lemma~\ref{lemme_rétraction et distance vectorielle}. 
+The basic idea of the proof of this theorem, is that if $\mu\in Q^\vee$ there exist a finite set $F\subset Y^{++}$ such that for all $\lambda\in Y^{++}+\A_{in}$, $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(0,\lambda) \subset \bigcup_{f\in F|\lambda-f\in\overline{C^v_f}} \rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(\lambda-f,f)$ (this is Corollary~\ref{lemme majoration du cardinal des boules}, which generalizes Lemma~\ref{lemme distance finie à l'appartement} and uses section~\ref{sect Y^++}). Then we use section~\ref{sect translations} to show  that $\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(\lambda-f,f)$ is the image of $\rho_{+\infty}^{-1}(\mu+f)\cap B^v(0,f)$ by a "translation" $\tau_{\lambda-f}$ of $G$ of vector $\lambda-f$ (which means that $\tau_{\lambda-f}$ induces the translation of vector $\lambda-f$ on $\mathbb{A}$). We fix $\nu\in C_f^v$ and set $y^-=y_\nu^-$. By Lemma~\ref{lemme y- des translatés},  \[y^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap B^v(0,\lambda)\big)\subset\bigcup_{f\in F}\tau_{\lambda-f}\circ y^-\big(B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\})\big).\] According to part 5 of \cite{gaussent2014spherical}, for all $f, \mu \in Y$, $B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\})$ is finite. Consequently, for $\lambda$ sufficiently dominant, $\bigcup_{f\in F}\tau_{\lambda-f}\big(y_-(B^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\}\big)\subset C^v_f$  and one concludes with Lemma~\ref{lemme_rétraction et distance vectorielle}. 
  
 
 
