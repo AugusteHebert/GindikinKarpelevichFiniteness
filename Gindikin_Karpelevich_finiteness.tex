@@ -25,7 +25,7 @@
 
 \usepackage{mathrsfs}
 \usepackage[all]{xy}
-\usepackage{mathbbol}
+
 
 
 \theoremstyle{definition}
@@ -98,7 +98,7 @@ Theorem~\ref{thm égalité des ensembles bis}:
  Let $\mu\in Q^\vee$. Then for $\lambda\in Y\cap C^v_f+\A_{in}$ sufficiently dominant, $S^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})=\rho_{-\infty}^{-1}(\{\lambda\})\cap\rho_{+\infty}^{-1}(\{\lambda+\mu\})$.
 \vspace{3mm}
 
-These theorems generalize theorem 1.9 of \cite{braverman2014affine}. Let us make the dictionary between our objects and those of loc. cit.. Our $Q^\vee$ corresponds to $R^\vee$ and $P^\vee=\{x\in \A|\ \forall i\in I,\ \alpha_i(x)\in\Z\}$ corresponds to $\Lambda^\vee$ (for each Kac-Moody matrix, we can choose a generating root system  such that $Y+\A_{in}=P^\vee$, as we will see in remark~\ref{rque changement de syst de racines}). For all $\lambda\in P^\vee$, $\rho_{-\infty}^{-1}(\{\lambda\})$ corresponds to $K\backslash K \pi^\lambda U^{-}$, $\rho_{+\infty}^{-1}(\{\lambda\})$ corresponds to $K\backslash K\pi^\lambda U$ and $S^v(0,\lambda)$ corresponds to  $K\backslash K\pi^\lambda K$. 
+These theorems generalize theorem 1.9 of \cite{braverman2014affine}. Let us make the dictionary between our objects and those of loc. cit.. Our $Q^\vee$ or $P^\vee=\{x\in \A|\ \forall i\in I,\ \alpha_i(x)\in\Z\}$ corresponds to $\Lambda^\vee$ (because in \cite{braverman2014affine}, the group is supposed to be simply-connected and thus $P^\vee=Q^\vee$). For all $\lambda\in Q^\vee$, $\rho_{-\infty}^{-1}(\{\lambda\})$ corresponds to $K\backslash K \pi^\lambda U^{-}$, $\rho_{+\infty}^{-1}(\{\lambda\})$ corresponds to $K\backslash K\pi^\lambda U$ and $S^v(0,\lambda)$ corresponds to  $K\backslash K\pi^\lambda K$. 
 
 Contrary to \cite{braverman2014affine}, we do not assume our Kac-Moody groups to be affine. This paper is written in the framework of hovels, which is a bit more general than that of split Kac-Moody groups over local non-archimedian field. For example, we might apply also apply this to almost split Kac-Moody groups over local non-archimedian field (see \cite{rousseau2012almost}).
 
@@ -290,6 +290,8 @@ For $x\in \I$ and $\lambda\in \overline{C_f^v}$, one defines $S^v(x,\lambda)=\{y
 a) If $a\in Y$ and $\lambda\in \overline{C_f^v}$, then $S^v(a,\lambda)=\{x\in \I|\exists g\in G|g.a=a\mathrm{\ and\ }g.x=a+\lambda\}$.
 
 b) Let $x,y\in \I$ and suppose that for some $g\in G$, $g.y-g.x\in \overline{C_f^v}$. Then $x\leq y$ and $d^v(x,y)=g.y-g.x$.
+
+
 \end{rque}
 
 \subsection{Retractions and Hecke paths}
@@ -360,7 +362,9 @@ One has $\rho_{+\infty}(x+\delta)=\rho_{+\infty}(x)+\delta$ and $y\in \rho_{+\in
 
 Let $\delta^-=-\R_+\nu$ and $x\in \I$. Similarly, one defines $y_\nu^-$ as the first point of $x+\delta^-$ meeting $\A$ and $T^-_\nu(x)$ as the element $T$ of $\R_+$ such that $\rho_{-\infty}(x)=y+T\nu$.
 
-
+\begin{rque}
+In the following, the choice of $\nu$ will not be very important. We will often need to choose $\nu\in Y\cap C^v_f$.
+\end{rque}
 
 Let $\I_0=G.0$.
 
@@ -537,7 +541,7 @@ Then $\tau(x)\in g^{-1}.\A$, thus $g.\tau(x)=\rho_{+\infty}(\tau(x))$ and by
  part~\ref{item commutation de tau}, $g.\tau(x)=\tau(g.x)$. Hence, $\tau$ and
   $\rho_{+\infty}$ commute and by the same reasoning, this is also true for $\tau$ and $\rho_{-\infty}$.
 
-Let $x\in\I$ and $\lambda\in \overline{C_f^v}$. Let $u\in S^v(x,\lambda)$. There exists $g\in G$ such that $x,u\in g^{-1}.\A$ and $g.u-g.x=\lambda$. Then $g.\tau(u)-g.x=\tau(g.u)-g.x=\lambda+\nu$. Therefore, $\tau(S^v(x,\lambda))\subset S^v(x,\lambda+\nu)$. Applying this result with $\tau_{-\nu}$ yields $\tau_{-\nu}(S^v(x,\lambda+\nu))\subset S^v(x,\lambda)$ and thus $\tau(S^v(x,\lambda))=S^v(x,\lambda+\nu)$.
+Let $x\in\I$ and $\lambda\in \overline{C_f^v}$. Let $u\in S^v(x,\lambda)$. There exists $g'\in G$ such that $x,u\in g'^{-1}.\A$ and $g'.u-g'.x=w.\lambda$, for some $w\in W^v$. Let $n\in N$ inducing $w$ on $\A$ and $g=n^{-1}g'$. Then $x,u\in g^{-1}.\A$ and $g.u-g.x=\lambda$. We have $g.\tau(u)-g.x=\tau(g.u)-g.x=\lambda+\nu$. Therefore, $\tau(S^v(x,\lambda))\subset S^v(x,\lambda+\nu)$. Applying this result with $\tau_{-\nu}$ yields $\tau_{-\nu}(S^v(x,\lambda+\nu))\subset S^v(x,\lambda)$ and thus $\tau(S^v(x,\lambda))=S^v(x,\lambda+\nu)$.
 
 One has $g.\tau(u)-g.\tau(x)=(g.u+\nu)-(g.x+\nu)=\lambda$ and thus $\tau(S^v(x,\lambda))\subset S^v(\tau(x),\lambda)$. Again, by considering $\tau_{-\nu}$, we have that $\tau(S^v(x,\lambda))=S^v(\tau(x),\lambda)$. $\square$
 
