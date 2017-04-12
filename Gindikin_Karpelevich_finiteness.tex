@@ -16,7 +16,7 @@
 \newtheorem{theorem}{Theorem}[section] %[subsection sert à numéroter les théorèmes d'après la sous-section où ils se trouvent
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{definition}[theorem]{Définition}
+\newtheorem{definition}[theorem]{Definition}
 \newtheorem{lemma}[theorem]{Lemma}
 \date{}
 
@@ -77,6 +77,8 @@
 \begin{abstract}
 In this paper, we prove some finiteness results about split Kac-Moody groups over  local non-archimedean fields. Our results generalize those of "An affine Gindikin-Karpelevich formula" by Alexander Braverman, Howard Garland, David Kazhdan and Manish Patnaik. We do not require our groups to be affine. We use the hovel $\I$ associated to this situation, which is the analogue of the Bruhat-Tits building for a reductive group.
 \end{abstract}
+ 
+
 
 \section{Introduction}
 The classical Gindikin-Karpelevich formula was introduced in 1962 by Simon Gindikin and Fridrikh Karpelevich. It applies to real semi-simple Lie groups and it enables to compute certain Plancherel densities for semi-simple Lie groups. This formula was established in the non-archimedean case by Robert Langlands in \cite{langlands1971euler}. In 2014, in \cite{braverman2014affine}, Alexander Braverman, Howard Garland, David Kazhdan and Manish Patnaik obtained a generalisation of this formula in the affine Kac-Moody case. 
@@ -216,11 +218,11 @@ for all $x,y\in F$, $x$ and $y$ are not comparable for $\prec$.
 
 \begin{proof} This  is clear for $l=1$ because a set $F$ satisfying INC(1) is a singleton or $\emptyset$. 
 
-Suppose that $l>1$ and that we have proven that all set satisfying INC(l-1) is finite.
+Suppose that $l>1$ and that we have proved that all set satisfying INC(l-1) is finite.
 
 Let $F$ be a set  satisfying INC(l) and suppose $F$ infinite. Let $(\lambda_n)_{n\in \N}$ be an injective sequence of $F$. One writes $(\lambda_n)=(\lambda_n^1,\ldots,\lambda_n^l)$. Let $(m_n)=(\min(\lambda_n))_{n\in \N}$ and $M=\max \lambda_{0}$. Then for all $n\in \N$, $m_n\leq M$ (if $m_n>M$, we would have $\lambda_{0}\prec \lambda_n$). Maybe extracting a sequence of $\lambda$, one can suppose that $(m_n)=(\lambda_n^i)$ for some $i\in \llbracket 1, l\rrbracket$ and that $(m_n)$ is constant and equal to $m_0\in \llbracket 0,M\rrbracket$. For $x\in \N^l$, we define $\tilde{x}=(x_j)_{j\in \llbracket 1,l\rrbracket\backslash \{i\}}\in \N^{l-1}$. 
  
- Set $\tilde{F}=\{\tilde{\lambda_n}|n\in\N\}$. The set $\tilde{F}$ satisfies INC(l-1). By the induction hypothesis, $\tilde{F}$ is finite and thus $F$ is finite, which is absurd. Hence $F$ is finite and the lemma is proven.  
+ Set $\tilde{F}=\{\tilde{\lambda_n}|n\in\N\}$. The set $\tilde{F}$ satisfies INC(l-1). By the induction hypothesis, $\tilde{F}$ is finite and thus $F$ is finite, which is absurd. Hence $F$ is finite and the lemma is proved.  
  \end{proof}
 
 \begin{lemma}\label{lemme description de Y^{++}}
@@ -252,11 +254,11 @@ If $F$ is a filter in a set $E$, and $E'$ is a subset of $E$, one says that $F$ 
 
 If $x\in V\mathrm{}$ and $\Omega$ is a subset of $V$ containing $x$ in its closure, then the \textit{germ} of $\Omega$ in $x$ is the filter $germ_x(\Omega)$ of subsets of $V$ containing a neighbourhood in $\Omega$ of $x$.
 
-A \textit{sector} in $V$ is a set of the shape $\mathfrak{s}=x+C^v$ with $C^v=\pm w.C_f^v$ for some $x\in \mathbb{A}$ and $w\in W^v$. The point $x$ is its \textit{base point} and $C^v$ is its \textit{direction}. The intersection of two sectors of the same direction contains a sector of the same direction.
+A \textit{sector} in $V$ is a set of the shape $\mathfrak{s}=x+C^v$ with $C^v=\pm w.C_f^v$ for some $x\in V$ and $w\in W^v$. The point $x$ is its \textit{base point} and $C^v$ is its \textit{direction}. The intersection of two sectors of the same direction contains a sector of the same direction.
 
 
 
-A \textit{sector-germ} of a sector $\mathfrak{s}=x+C^v$ is the filter $\mathfrak{S}$ of subsets of $V$ containing a $V$-translate of $\mathfrak{s}$. It only depends on the direction $C^v$. We denote by $+\infty$ (resp. $-\infty$) the sector-germ of $C_f^v$ (resp. of $-C_f^v$).
+The \textit{sector-germ} of a sector $\mathfrak{s}=x+C^v$ is the filter $\mathfrak{S}$ of subsets of $V$ containing a $V$-translate of $\mathfrak{s}$. It only depends on the direction $C^v$. We denote by $+\infty$ (resp. $-\infty$) the sector-germ of $C_f^v$ (resp. of $-C_f^v$).
 
  
 
@@ -269,7 +271,7 @@ In the next subsection, we define the notions of faces, enclosures and chimneys 
 
 \begin{enumerate}
 
-\item To any filter $F$ of $V$ is associated its enclosure $\mathrm{cl}_{\mathbb{A}}(F)$ which is a filter in $\mathbb{A}$ containing the convex envelope of the closure of $F$.
+\item An enclosure $\mathrm{cl}_{V}(F)$ is associated to each filter $F$ of $V$ . This a filter in $V$ containing the convex envelope of the closure of $F$.
 
 \item A face or a chimney is a filter in $V$.
 
@@ -366,7 +368,7 @@ b) Let $x,y\in \I$ and suppose that for some $g\in G$, $g.y-g.x\in \overline{C_f
 \subsection{Retractions and Hecke paths}
 
 
-Let  $\mathfrak{R}$ be the germ of a splayed chimney of an apartment $A$. Let $x\in \I$. By (MA3), for all $x\in \I$, there exists an apartment $A_x$ of $\I$ containing $x$ and $\mathfrak{R}$. By (MA4), there exists an isomorphism of apartments $\phi:A_x\rightarrow A$ fixing $\mathfrak{R}$. By \cite{rousseau2011masures} 2.6, $\phi(x)$ does not depend on the choices we made and thus we can let $\rho_{A,\mathfrak{R}}(x)=\phi(x)$.
+Let  $\mathfrak{R}$ be the germ of a splayed chimney of an apartment $A$. Let $x\in \I$. By (MA3), there exists an apartment $A_x$ of $\I$ containing $x$ and $\mathfrak{R}$. By (MA4), there exists an isomorphism of apartments $\phi:A_x\rightarrow A$ fixing $\mathfrak{R}$. By \cite{rousseau2011masures} 2.6, $\phi(x)$ does not depend on the choices we made and thus we can let $\rho_{A,\mathfrak{R}}(x)=\phi(x)$.
 
 The application $\rho_{A,\mathfrak{R}}$ is a retraction from $\I$ onto $A$. It only depends on $\mathfrak{R}$ and $A$ and we call it the \textit{retraction onto $A$ centred at $\mathfrak{R}$}. 
 
@@ -413,10 +415,10 @@ Recall that we want to prove Theorem~\ref{thm inclusion}: Let $\mu\in \A$. Then 
 Let us sketch the proof of this theorem. We fix $\nu\in C_f^v$ and $\mu\in Q^\vee_\R$. Let $T^-=T_{\nu}^-$ and $y^-=y_\nu^-$ be the analogue of $T_\nu$ and $y_\nu$ with $\nu$ replaced by $-\nu$. We show that if $\lambda\in \A$, $T^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\big)$ is bounded by some constant $h(\mu)$ (this is Corollary~\ref{corollaire majoration de T}), which uses Lemma~\ref{lemme image réciproque de segments} and Lemma~\ref{lemme fin des chemins de Hecke longs}). Therefore, for $\lambda$ sufficiently dominant, $y^-\big(\rho_{+\infty}^{-1}(\{\lambda+\mu\})\cap \rho_{-\infty}^{-1}(\{\lambda\})\big)\subset C_f^v$ and Lemma~\ref{lemme_rétraction et distance vectorielle} completes the proof.
 
 \medskip
-Let us recall briefly the notion of parallelism in $\I$. This is done more completely in \cite{rousseau2011masures} Section 3. Let $\delta$ and $\delta'$ be two generic rays in $\I$. Then there exists a splayed chimney $R$ containing $\delta$ and a solid chimney $F$ containing $\delta'$. By (MA3) there exists an apartment $A$ containing the germ $\mathfrak{R}$ of $R$ and $F$. Therefore $A$ contains translates of $\delta$ and $\delta'$ and we say that $\delta$ and $\delta'$ are \textit{parallel}, if these translates are parallel in $A$. Parallelism is an equivalence relation and its equivalence classes are called \textit{directions}.
+Let us recall briefly the notion of parallelism in $\I$. This is done more completely in \cite{rousseau2011masures} Section 3. Let $\delta$ and $\delta'$ be two generic rays in $\I$. Then by (MA3) and \cite{rousseau2011masures} 2.2 3) there exists an apartment $A$ containing the germs of $\delta$ and $\delta'$. Therefore $A$ contains translates of $\delta$ and $\delta'$ and we say that $\delta$ and $\delta'$ are \textit{parallel}, if these translates are parallel in $A$. Parallelism is an equivalence relation and its equivalence classes are called \textit{directions}.
 
 \begin{lemma}\label{lemme demi-droite de base donnée}
-Let $x\in \I$ and $\delta$ be a generic ray. Then there exists a unique ray$ x+\delta$ in $\I$ with base point $x$ and direction $\delta$. In any apartment $A$ containing $x$ and a ray $\delta'$ parallel to $\delta$, this ray is the translate in $A$ of $\delta'$ having $x$ as a base point.
+Let $x\in \I$ and $\delta$ be a generic ray. Then there exists a unique ray $x+\delta$ in $\I$ with base point $x$ and direction $\delta$. In any apartment $A$ containing $x$ and a ray $\delta'$ parallel to $\delta$, this ray is the translate in $A$ of $\delta'$ having $x$ as a base point.
 \end{lemma}
 
 This lemma is analogous to Proposition 4.7 1) of \cite{rousseau2011masures}. The difficult part of this lemma is the uniqueness of such a ray because second part of the lemma yields a way to construct a ray having direction $\delta$ and $x$ as a base point. This uniqueness can be shown exactly in the same manner as the proof of Proposition 4.7.1) by replacing "spherical sector face" by "generic ray". This is possible by NB.a) of Proposition 2.7 and by 2.2 3) (or by Remark~\ref{rque axioms MA3 et MA4 modifiés} of this paper) of \cite{rousseau2011masures}.
@@ -526,7 +528,7 @@ With the same reasoning but by considering Hecke with respect to $C^v_f$ we obta
 \end{rque}
 
 \begin{corollary}\label{cor points ayant meme image par les rétractions}
- Let $x\in\mathcal{I}$ such that $\rho_{+\infty}(x)=\rho_{-\infty}(x)$. Then $x\in \mathbb{A}$. Therefore, $\forall z\in \mathbb{A}$, $\rho_{+\infty}^{-1}(\{z\})\cap\rho_{-\infty}^{-1}(\{z\})=\{z\}$.
+ Let $x\in\mathcal{I}$ such that $\rho_{+\infty}(x)=\rho_{-\infty}(x)$. Then $x\in \mathbb{A}$. Therefore, for all  $z\in \mathbb{A}$, $\rho_{+\infty}^{-1}(\{z\})\cap\rho_{-\infty}^{-1}(\{z\})=\{z\}$.
 \end{corollary}
 
 
@@ -598,10 +600,10 @@ Let $\nu\in \A_{in}$ and $\tau=\tau_\nu$. Then:
 \item For all $g\in G$, $g\circ\tau=\tau\circ g$. In particular, for all $x\in \I$, if $x$ is in an apartment $A$,
  then $\tau(x)\in A$, and if $x=g.a$ with $g\in G$ and $a\in\A$, then $\tau(x)=g.(x+\nu)$.\label{item commutation de tau}
 
-\item The application $\tau$ is a bijection, its inverse being $\tau_{-\nu}$.\label{item bijectivité des translations}
+\item The map $\tau$ is a bijection, its inverse being $\tau_{-\nu}$.\label{item bijectivité des translations}
 
 
-\item The application $\tau$ commutes with $\rho_{+\infty}$ and $\rho_{-\infty}.$\label{item commutation translation retraction}
+\item The map $\tau$ commutes with $\rho_{+\infty}$ and $\rho_{-\infty}.$\label{item commutation translation retraction}
 
 \item Let $x\in \I$ and $\lambda\in \overline{C_f^v}$, then $\tau(S^v(x,\lambda))=S^v(\tau(x),\lambda)=S^v(x,\lambda+\nu).$\label{item translation d'une boule}
 
@@ -761,7 +763,7 @@ Let $H=-h(\mu)+1$ and $F=\{\sum_{e\in E}\nu_e e|(\nu_e)\in \llbracket 0,H-1\rrbr
 
 Let $x\in S^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})$. Then by Lemma~\ref{lemme majoration du cardinal des boules}, there exists $f\in F$ such that $\lambda-f\in \overline{C^v_f}$ and $x\in S^v(\lambda-f,f)$. Let $n$ an element of $G$ inducing the translation of vector $\Lambda-f=\lambda-\lambda_{in}+f$ on $\A$ and $\tau_{\lambda,f}=\tau_{\lambda_{in}}\circ n$. Then $x\in\tau_{\lambda,f}(B_f)$ where $B_f=S^v(0,f)\cap \rho_{+\infty}^{-1}(\{\mu +f\})$.
 
-Let $B=\bigcup_{f\in F}B_f$. Then one has proven that \[S^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})\subset \bigcup_{f\in F}\tau_{\lambda,f}(B).\]
+Let $B=\bigcup_{f\in F}B_f$. Then one has proved that \[S^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})\subset \bigcup_{f\in F}\tau_{\lambda,f}(B).\]
 
 By Section 5 of \cite{gaussent2014spherical} (or Corollary~\ref{cor finitude des boules}), $B_f$ is finite for all $f\in F$ and thus $B=\bigcup_{f\in F}B_f$ is finite.  Let $\nu\in C_f^v$ and $y^-=y_\nu^-$. Then $y^-(B)$ is finite and for $\lambda$ sufficiently dominant, $\bigcup_{f\in F}\tau_{\lambda,f}\circ y^-(B) \subset{C^v_f}$. Moreover, according to Lemma~\ref{lemme y- des translatés}, $\bigcup_{f\in F}\tau_{\lambda,f}\circ y^-(B)=\bigcup_{f\in F}y^-\circ \tau_{\lambda,f}(B)$. Hence \[y^-\big(S^v(0,\lambda)\cap \rho_{+\infty}^{-1}(\{\lambda+\mu\})\big)\subset C^v_f\] for $\lambda$ sufficiently dominant. Eventually one concludes with Lemma~\ref{lemme_rétraction et distance vectorielle}.  
 \end{proof}
